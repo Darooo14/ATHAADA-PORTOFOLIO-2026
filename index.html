@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#050505">
+
+    <meta name="description" content="Athaada Ichiro — Developer Portfolio">
+
+    <title>ATHAADA — Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= LOADER ================= -->
+
+    <div id="loader">
+
+        <div class="loader-inner">
+
+            <div class="loader-logo">A.</div>
+
+            <div class="loader-text">INITIALIZING ATHAADA OS</div>
+
+            <div class="loader-bar">
+
+                <span id="loaderProgress"></span>
+
+            </div>
+
+            <div class="loader-percent" id="loaderPercent">0%</div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= CURSOR ================= -->
+
+    <div class="cursor-dot"></div>
+
+    <div class="cursor-ring"></div>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <div class="noise"></div>
+
+    <div class="bg-grid"></div>
+
+    <div class="ambient ambient-one"></div>
+
+    <div class="ambient ambient-two"></div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar" id="navbar">
+
+        <a href="#home" class="brand">
+
+            <span class="brand-mark">A.</span>
+
+            <span>ATHAADA</span>
+
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home" class="active">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#journey">Journey</a>
+
+            <a href="#contact">Contact</a>
+
+            <button class="nav-os" onclick="openOS()">◉ OS</button>
+
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Buka menu">
+
+            ☰
+
+        </button>
+
+    </header>
+
+    <!-- ================= SCROLL PROGRESS ================= -->
+
+    <div class="scroll-progress">
+
+        <span id="scrollProgress"></span>
+
+    </div>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= SYSTEM BOOT ================= -->
+
+        <section class="system-boot reveal">
+
+            <div class="boot-top">
+
+                <span>ATHAADA OS</span>
+
+                <span>PORTFOLIO.SYSTEM</span>
+
+            </div>
+
+            <div class="boot-line"></div>
+
+            <div class="boot-content">
+
+                <div class="boot-terminal">
+
+                    <p><span>&gt;</span> initializing portfolio...</p>
+
+                    <p><span>&gt;</span> loading projects... <b>[██████████] 100%</b></p>
+
+                    <p><span>&gt;</span> loading skills... <b>[██████████] 100%</b></p>
+
+                    <p><span>&gt;</span> establishing connection...</p>
+
+                    <p class="online"><span>●</span> system online</p>
+
+                </div>
+
+                <div class="boot-welcome">
+
+                    <small>WELCOME TO</small>
+
+                    <h2>ATHAADA<span>_</span>OS</h2>
+
+                    <p>Digital Portfolio System</p>
+
+                </div>
+
+            </div>
+
+            <div class="boot-bottom">
+
+                <span>STATUS: ONLINE</span>
+
+                <span id="bootClock">00:00:00</span>
+
+                <span>SECURE CONNECTION</span>
+
+            </div>
+
+        </section>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero section" id="home">
+
+            <canvas id="particleCanvas"></canvas>
+
+            <div class="hero-content reveal">
+
+                <div class="status-pill">
+
+                    <span class="status-dot"></span>
+
+                    <span>SYSTEM ONLINE</span>
+
+                    <span class="status-line"></span>
+
+                    <span id="heroClock">00:00:00</span>
+
+                </div>
+
+                <div class="hero-kicker">
+
+                    <span>01</span>
+
+                    <span class="line"></span>
+
+                    <span id="typingText">DEVELOPER</span>
+
+                </div>
+
+                <h1>
+
+                    <span class="hero-small">HI, I'M</span>
+
+                    <span class="hero-name">
+
+                        ATHAADA
+
+                    </span>
+
+                    <span class="hero-role">
+
+                        I BUILD <em>DIGITAL</em><br>
+
+                        EXPERIENCES.
+
+                    </span>
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Developer muda yang suka membangun website,
+
+                    aplikasi, AI, dan eksperimen teknologi dengan
+
+                    pendekatan kreatif dan modern.
+
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#projects" class="btn btn-primary magnetic">
+
+                        <span>EXPLORE PROJECTS</span>
+
+                        <span>↗</span>
+
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary magnetic">
+
+                        LET'S CONNECT
+
+                    </a>
+
+                </div>
+
+                <div class="hero-meta">
+
+                    <div>
+
+                        <span class="meta-label">BASED IN</span>
+
+                        <strong>INDONESIA</strong>
+
+                    </div>
+
+                    <div>
+
+                        <span class="meta-label">FOCUS</span>
+
+                        <strong>WEB / AI / TECH</strong>
+
+                    </div>
+
+                    <div>
+
+                        <span class="meta-label">STATUS</span>
+
+                        <strong class="online-text">AVAILABLE</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual reveal">
+
+                <div class="hero-orbit orbit-one"></div>
+
+                <div class="hero-orbit orbit-two"></div>
+
+                <div class="profile-frame">
+
+                    <div class="profile-top">
+
+                        <span>ATHAADA.EXE</span>
+
+                        <span>01 / 01</span>
+
+                    </div>
+
+                    <div class="profile-image-wrap">
+
+                        <img
+
+                            src="images/profile.jpeg"
+
+                            alt="Athaada Ichiro"
+
+                            class="profile-image"
+
+                        >
+
+                        <div class="image-overlay"></div>
+
+                        <div class="scan-line"></div>
+
+                    </div>
+
+                    <div class="profile-bottom">
+
+                        <div>
+
+                            <span>IDENTITY</span>
+
+                            <strong>ATHAADA ICHIRO</strong>
+
+                        </div>
+
+                        <div class="profile-status">
+
+                            <span class="mini-dot"></span>
+
+                            ONLINE
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="floating-card floating-card-one">
+
+                    <span class="float-icon">⌁</span>
+
+                    <div>
+
+                        <small>CURRENT MODE</small>
+
+                        <strong>BUILDING</strong>
+
+                    </div>
+
+                </div>
+
+                <div class="floating-card floating-card-two">
+
+                    <span class="float-icon">✦</span>
+
+                    <div>
+
+                        <small>CREATIVE</small>
+
+                        <strong>ENGINEER</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-scroll">
+
+                <span>SCROLL TO EXPLORE</span>
+
+                <div class="scroll-line"></div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section about-section" id="about">
+
+            <div class="section-heading reveal">
+
+                <div class="section-number">02</div>
+
+                <div>
+
+                    <span class="eyebrow">WHO I AM</span>
+
+                    <h2>ABOUT <span>ME.</span></h2>
+
+                </div>
+
+                <p>
+
+                    Curious mind. Builder mentality.
+
+                    Always experimenting with something new.
+
+                </p>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-card about-main reveal">
+
+                    <span class="card-index">01 / PROFILE</span>
+
+                    <h3>
+
+                        I LIKE TURNING
+
+                        <span>IDEAS</span>
+
+                        INTO REAL THINGS.
+
+                    </h3>
+
+                    <p>
+
+                        Saya adalah developer yang tertarik pada dunia
+
+                        teknologi, web development, artificial intelligence,
+
+                        dan computer vision.
+
+                    </p>
+
+                    <p>
+
+                        Saya suka belajar dengan cara membuat sesuatu.
+
+                        Setiap project menjadi tempat untuk mencoba,
+
+                        gagal, memperbaiki, dan berkembang.
+
+                    </p>
+
+                    <div class="about-signature">
+
+                        <span>ATHAADA</span>
+
+                        <small>DEVELOPER / CREATOR</small>
+
+                    </div>
+
+                </div>
+
+                <div class="about-side">
+
+                    <div class="stat-card reveal">
+
+                        <span>PROJECTS</span>
+
+                        <strong>03+</strong>
+
+                        <small>PERSONAL BUILDS</small>
+
+                    </div>
+
+                    <div class="stat-card reveal">
+
+                        <span>INTEREST</span>
+
+                        <strong>AI</strong>
+
+                        <small>WEB / COMPUTER VISION</small>
+
+                    </div>
+
+                    <div class="quote-card reveal">
+
+                        <span>“</span>
+
+                        <p>
+
+                            Build it. Break it.
+
+                            Understand it.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+
+        <section class="section skills-section" id="skills">
+
+            <div class="section-heading reveal">
+
+                <div class="section-number">03</div>
+
+                <div>
+
+                    <span class="eyebrow">TECH STACK</span>
+
+                    <h2>MY <span>SKILLS.</span></h2>
+
+                </div>
+
+                <p>
+
+                    Tools and technologies I use to
+
+                    turn ideas into working projects.
+
+                </p>
+
+            </div>
+
+            <div class="skills-layout">
+
+                <div class="skills-intro reveal">
+
+                    <div class="big-number">04</div>
+
+                    <h3>
+
+                        CURIOUS
+
+                        <br>
+
+                        BY DEFAULT.
+
+                    </h3>
+
+                    <p>
+
+                        Tidak terpaku pada satu teknologi.
+
+                        Saya suka mencoba tools baru dan
+
+                        memahami bagaimana semuanya bekerja.
+
+                    </p>
+
+                </div>
+
+                <div class="skills-list">
+
+                    <div class="skill-item reveal">
+
+                        <div class="skill-head">
+
+                            <span>HTML / CSS</span>
+
+                            <span>90%</span>
+
+                        </div>
+
+                        <div class="skill-track">
+
+                            <span style="width:90%"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill-item reveal">
+
+                        <div class="skill-head">
+
+                            <span>JAVASCRIPT</span>
+
+                            <span>82%</span>
+
+                        </div>
+
+                        <div class="skill-track">
+
+                            <span style="width:82%"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill-item reveal">
+
+                        <div class="skill-head">
+
+                            <span>PYTHON</span>
+
+                            <span>80%</span>
+
+                        </div>
+
+                        <div class="skill-track">
+
+                            <span style="width:80%"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill-item reveal">
+
+                        <div class="skill-head">
+
+                            <span>AI / ML</span>
+
+                            <span>70%</span>
+
+                        </div>
+
+                        <div class="skill-track">
+
+                            <span style="width:70%"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill-item reveal">
+
+                        <div class="skill-head">
+
+                            <span>OPENCV</span>
+
+                            <span>68%</span>
+
+                        </div>
+
+                        <div class="skill-track">
+
+                            <span style="width:68%"></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tech-marquee">
+
+                <div>
+
+                    HTML <span>✦</span>
+
+                    CSS <span>✦</span>
+
+                    JAVASCRIPT <span>✦</span>
+
+                    PYTHON <span>✦</span>
+
+                    FLASK <span>✦</span>
+
+                    AI <span>✦</span>
+
+                    OPENCV <span>✦</span>
+
+                    GIT <span>✦</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="section-heading reveal">
+
+                <div class="section-number">04</div>
+
+                <div>
+
+                    <span class="eyebrow">SELECTED WORK</span>
+
+                    <h2>MY <span>PROJECTS.</span></h2>
+
+                </div>
+
+                <p>
+
+                    Beberapa project yang pernah saya
+
+                    bangun dan eksplorasi.
+
+                </p>
+
+            </div>
+
+            <div class="project-filters reveal">
+
+                <button class="filter-btn active" data-filter="all">
+
+                    ALL
+
+                </button>
+
+                <button class="filter-btn" data-filter="ai">
+
+                    AI
+
+                </button>
+
+                <button class="filter-btn" data-filter="web">
+
+                    WEB
+
+                </button>
+
+                <button class="filter-btn" data-filter="vision">
+
+                    VISION
+
+                </button>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <article
+
+                    class="project-card featured reveal"
+
+                    data-category="ai"
+
+                    data-project="NOVA AI"
+
+                >
+
+                    <div class="project-number">01</div>
+
+                    <div class="project-top">
+
+                        <span>AI APPLICATION</span>
+
+                        <span>↗</span>
+
+                    </div>
+
+                    <div class="project-visual nova-visual">
+
+                        <div class="nova-circle">N</div>
+
+                        <div class="project-code">
+
+                            <span>AI</span>
+
+                            <span>MEMORY</span>
+
+                            <span>CHAT</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>NOVA AI</h3>
+
+                        <p>
+
+                            AI chat application dengan
+
+                            memory percakapan dan
+
+                            pengalaman chat modern.
+
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>PYTHON</span>
+
+                            <span>FLASK</span>
+
+                            <span>AI</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article
+
+                    class="project-card reveal"
+
+                    data-category="web"
+
+                    data-project="WEB AZRIEL"
+
+                >
+
+                    <div class="project-number">02</div>
+
+                    <div class="project-top">
+
+                        <span>WEB PROJECT</span>
+
+                        <span>↗</span>
+
+                    </div>
+
+                    <div class="project-visual web-visual">
+
+                        <div class="browser-mini">
+
+                            <div class="browser-bar">
+
+                                <i></i>
+
+                                <i></i>
+
+                                <i></i>
+
+                            </div>
+
+                            <div class="browser-content">
+
+                                <strong>AZRIEL</strong>
+
+                                <span>FOR OSIS.</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>WEB AZRIEL</h3>
+
+                        <p>
+
+                            Campaign website untuk
+
+                            calon Ketua OSIS dengan
+
+                            desain modern.
+
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                            <span>JS</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article
+
+                    class="project-card reveal"
+
+                    data-category="vision"
+
+                    data-project="HAND TRACKING"
+
+                >
+
+                    <div class="project-number">03</div>
+
+                    <div class="project-top">
+
+                        <span>COMPUTER VISION</span>
+
+                        <span>↗</span>
+
+                    </div>
+
+                    <div class="project-visual vision-visual">
+
+                        <div class="hand-grid">
+
+                            <span>⌁</span>
+
+                            <span>⌁</span>
+
+                            <span>⌁</span>
+
+                            <span>⌁</span>
+
+                            <span>⌁</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>HAND TRACKING</h3>
+
+                        <p>
+
+                            Eksperimen computer vision
+
+                            menggunakan kamera dan
+
+                            hand tracking.
+
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>PYTHON</span>
+
+                            <span>OPENCV</span>
+
+                            <span>MEDIAPIPE</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ================= JOURNEY ================= -->
+
+        <section class="section journey-section" id="journey">
+
+            <div class="section-heading reveal">
+
+                <div class="section-number">05</div>
+
+                <div>
+
+                    <span class="eyebrow">THE JOURNEY</span>
+
+                    <h2>HOW I <span>GROW.</span></h2>
+
+                </div>
+
+                <p>
+
+                    Belajar bukan cuma membaca.
+
+                    Saya belajar dengan membuat.
+
+                </p>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-marker">
+
+                        01
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span>BEGINNING</span>
+
+                        <h3>STARTED WITH CURIOSITY</h3>
+
+                        <p>
+
+                            Rasa penasaran terhadap komputer
+
+                            membawa saya mulai mengenal
+
+                            programming dan membuat project kecil.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-marker">
+
+                        02
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span>BUILDING</span>
+
+                        <h3>STARTED BUILDING PROJECTS</h3>
+
+                        <p>
+
+                            Mulai membuat website,
+
+                            aplikasi sederhana,
+
+                            sampai eksperimen AI.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-marker">
+
+                        03
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span>EXPLORING</span>
+
+                        <h3>EXPANDING THE STACK</h3>
+
+                        <p>
+
+                            Mencoba Python, computer vision,
+
+                            AI, backend, dan berbagai
+
+                            teknologi baru.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-marker">
+
+                        04
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span>NEXT</span>
+
+                        <h3>BUILD SOMETHING BIGGER</h3>
+
+                        <p>
+
+                            Terus belajar dan membangun
+
+                            project yang lebih kompleks,
+
+                            kreatif, dan berguna.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="contact-box reveal">
+
+                <div class="contact-glow"></div>
+
+                <span class="eyebrow">06 / CONTACT</span>
+
+                <h2>
+
+                    HAVE AN IDEA?
+
+                    <br>
+
+                    <span>LET'S BUILD IT.</span>
+
+                </h2>
+
+                <p>
+
+                    Kalau ada project, ide, atau sekadar
+
+                    ingin ngobrol soal teknologi,
+
+                    feel free to connect.
+
+                </p>
+
+                <div class="contact-actions">
+
+                    <button
+
+                        class="btn btn-primary magnetic"
+
+                        onclick="copyIdentity()"
+
+                    >
+
+                        COPY MY IDENTITY
+
+                    </button>
+
+                    <button
+
+                        class="btn btn-secondary magnetic"
+
+                        onclick="openTerminal()"
+
+                    >
+
+                        OPEN TERMINAL
+
+                    </button>
+
+                </div>
+
+                <div class="contact-terminal">
+
+                    <span>visitor@athaada:~$</span>
+
+                    <strong>connect --with athaada</strong>
+
+                    <span class="blink">_</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-left">
+
+            <strong>ATHAADA.</strong>
+
+            <span>DEVELOPER / CREATOR</span>
+
+        </div>
+
+        <div class="footer-center">
+
+            © 2026 ATHAADA ICHIRO
+
+        </div>
+
+        <button
+
+            class="back-top"
+
+            id="topBtn"
+
+            aria-label="Kembali ke atas"
+
+        >
+
+            ↑
+
+        </button>
+
+    </footer>
+
+    <!-- ================= PROJECT MODAL ================= -->
+
+    <div class="modal" id="projectModal">
+
+        <div class="modal-backdrop"></div>
+
+        <div class="project-modal">
+
+            <button class="modal-close" id="projectModalClose">
+
+                ×
+
+            </button>
+
+            <span class="eyebrow" id="modalType">
+
+                PROJECT
+
+            </span>
+
+            <h2 id="modalTitle">
+
+                PROJECT
+
+            </h2>
+
+            <p id="modalDescription"></p>
+
+            <div class="modal-tags" id="modalTags"></div>
+
+            <div class="modal-footer">
+
+                <span id="modalStatus">STATUS</span>
+
+                <a id="modalLink" href="#" target="_blank">
+
+                    OPEN PROJECT ↗
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= TERMINAL ================= -->
+
+    <div class="modal" id="terminalModal">
+
+        <div class="modal-backdrop"></div>
+
+        <div class="terminal-window">
+
+            <div class="terminal-header">
+
+                <div class="terminal-lights">
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </div>
+
+                <span>ATHAADA TERMINAL</span>
+
+                <button id="terminalClose">×</button>
+
+            </div>
+
+            <div class="terminal-body" id="terminalOutput">
+
+                <div>
+
+                    ATHAADA TERMINAL v3.0
+
+                </div>
+
+                <div>
+
+                    Type <span class="terminal-green">help</span>
+
+                    to see available commands.
+
+                </div>
+
+                <br>
+
+            </div>
+
+            <div class="terminal-input-row">
+
+                <span>visitor@athaada:~$</span>
+
+                <input
+
+                    id="terminalInput"
+
+                    type="text"
+
+                    autocomplete="off"
+
+                    spellcheck="false"
+
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= COMMAND PALETTE ================= -->
+
+    <div class="command-palette" id="commandPalette">
+
+        <div class="command-box">
+
+            <div class="command-search">
+
+                <span>⌕</span>
+
+                <input
+
+                    id="commandInput"
+
+                    type="text"
+
+                    placeholder="Type a command..."
+
+                    autocomplete="off"
+
+                >
+
+                <kbd>ESC</kbd>
+
+            </div>
+
+            <div class="command-list">
+
+                <button data-command="home">
+
+                    <span>⌂</span>
+
+                    <div>
+
+                        <strong>Go Home</strong>
+
+                        <small>Scroll to homepage</small>
+
+                    </div>
+
+                </button>
+
+                <button data-command="projects">
+
+                    <span>▣</span>
+
+                    <div>
+
+                        <strong>Projects</strong>
+
+                        <small>View selected projects</small>
+
+                    </div>
+
+                </button>
+
+                <button data-command="terminal">
+
+                    <span>⌘</span>
+
+                    <div>
+
+                        <strong>Terminal</strong>
+
+                        <small>Open developer terminal</small>
+
+                    </div>
+
+                </button>
+
+                <button data-command="os">
+
+                    <span>◉</span>
+
+                    <div>
+
+                        <strong>ATHAADA OS</strong>
+
+                        <small>Open desktop environment</small>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= TOAST ================= -->
+
+    <div class="toast" id="toast">
+
+        <span class="toast-icon">✓</span>
+
+        <span id="toastMessage">Done</span>
+
+    </div>
+
+    <!-- ================= ATHAADA OS ================= -->
+
+    <div id="osOverlay" class="os-overlay">
+
+        <div class="os-wallpaper"></div>
+
+        <div class="os-topbar">
+
+            <div class="os-system">
+
+                <span class="os-logo">A.</span>
+
+                <strong>ATHAADA OS</strong>
+
+            </div>
+
+            <div class="os-top-status">
+
+                <span class="os-network">
+
+                    <i></i> ONLINE
+
+                </span>
+
+                <span id="osClock">
+
+                    00:00
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- DESKTOP -->
+
+        <div class="os-desktop">
+
+            <button
+
+                class="desktop-icon"
+
+                data-window="aboutWindow"
+
+            >
+
+                <span class="desktop-icon-image">◉</span>
+
+                <span>About</span>
+
+            </button>
+
+            <button
+
+                class="desktop-icon"
+
+                data-window="projectsWindow"
+
+            >
+
+                <span class="desktop-icon-image">▣</span>
+
+                <span>Projects</span>
+
+            </button>
+
+            <button
+
+                class="desktop-icon"
+
+                data-window="skillsWindow"
+
+            >
+
+                <span class="desktop-icon-image">◇</span>
+
+                <span>Skills</span>
+
+            </button>
+
+            <button
+
+                class="desktop-icon"
+
+                data-window="novaWindow"
+
+            >
+
+                <span class="desktop-icon-image">N</span>
+
+                <span>NOVA AI</span>
+
+            </button>
+
+            <button
+
+                class="desktop-icon"
+
+                data-action="terminal"
+
+            >
+
+                <span class="desktop-icon-image">⌘</span>
+
+                <span>Terminal</span>
+
+            </button>
+
+        </div>
+
+        <!-- ABOUT WINDOW -->
+
+        <div
+
+            class="os-window"
+
+            id="aboutWindow"
+
+            data-title="About"
+
+        >
+
+            <div class="os-window-header">
+
+                <span>ABOUT ATHAADA</span>
+
+                <div>
+
+                    <button data-minimize>−</button>
+
+                    <button data-close>×</button>
+
+                </div>
+
+            </div>
+
+            <div class="os-window-body">
+
+                <div class="os-profile">
+
+                    <img
+
+                        src="images/profile.jpeg"
+
+                        alt="Athaada"
+
+                    >
+
+                    <div>
+
+                        <span>USER PROFILE</span>
+
+                        <h3>ATHAADA ICHIRO</h3>
+
+                        <p>Developer / Creator</p>
+
+                    </div>
+
+                </div>
+
+                <div class="os-info-grid">
+
+                    <div>
+
+                        <small>STATUS</small>
+
+                        <strong>ONLINE</strong>
+
+                    </div>
+
+                    <div>
+
+                        <small>MODE</small>
+
+                        <strong>BUILDING</strong>
+
+                    </div>
+
+                    <div>
+
+                        <small>INTEREST</small>
+
+                        <strong>AI / WEB</strong>
+
+                    </div>
+
+                    <div>
+
+                        <small>SYSTEM</small>
+
+                        <strong>ATHAADA OS</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT WINDOW -->
+
+        <div
+
+            class="os-window"
+
+            id="projectsWindow"
+
+            data-title="Projects"
+
+        >
+
+            <div class="os-window-header">
+
+                <span>PROJECTS</span>
+
+                <div>
+
+                    <button data-minimize>−</button>
+
+                    <button data-close>×</button>
+
+                </div>
+
+            </div>
+
+            <div class="os-window-body">
+
+                <div class="os-app-grid">
+
+                    <button data-open-project="NOVA AI">
+
+                        <span>✦</span>
+
+                        NOVA AI
+
+                    </button>
+
+                    <button data-open-project="WEB AZRIEL">
+
+                        <span>◈</span>
+
+                        WEB AZRIEL
+
+                    </button>
+
+                    <button data-open-project="HAND TRACKING">
+
+                        <span>⌁</span>
+
+                        HAND TRACKING
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SKILLS WINDOW -->
+
+        <div
+
+            class="os-window"
+
+            id="skillsWindow"
+
+            data-title="Skills"
+
+        >
+
+            <div class="os-window-header">
+
+                <span>SKILLS</span>
+
+                <div>
+
+                    <button data-minimize>−</button>
+
+                    <button data-close>×</button>
+
+                </div>
+
+            </div>
+
+            <div class="os-window-body">
+
+                <div class="os-skill-row">
+
+                    <span>HTML / CSS</span>
+
+                    <strong>90%</strong>
+
+                </div>
+
+                <div class="os-skill-row">
+
+                    <span>JAVASCRIPT</span>
+
+                    <strong>82%</strong>
+
+                </div>
+
+                <div class="os-skill-row">
+
+                    <span>PYTHON</span>
+
+                    <strong>80%</strong>
+
+                </div>
+
+                <div class="os-skill-row">
+
+                    <span>AI</span>
+
+                    <strong>70%</strong>
+
+                </div>
+
+                <div class="os-skill-row">
+
+                    <span>OPENCV</span>
+
+                    <strong>68%</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- NOVA WINDOW -->
+
+        <div
+
+            class="os-window"
+
+            id="novaWindow"
+
+            data-title="NOVA AI"
+
+        >
+
+            <div class="os-window-header">
+
+                <span>NOVA AI</span>
+
+                <div>
+
+                    <button data-minimize>−</button>
+
+                    <button data-close>×</button>
+
+                </div>
+
+            </div>
+
+            <div class="os-window-body nova-app">
+
+                <div class="nova-header">
+
+                    <div class="nova-avatar">N</div>
+
+                    <div>
+
+                        <strong>NOVA</strong>
+
+                        <small>AI ASSISTANT</small>
+
+                    </div>
+
+                </div>
+
+                <div
+
+                    class="nova-messages"
+
+                    id="novaMessages"
+
+                >
+
+                    <div class="nova-message">
+
+                        Hello. I'm NOVA.
+
+                        <br>
+
+                        How can I assist you?
+
+                    </div>
+
+                </div>
+
+                <div class="nova-input">
+
+                    <input
+
+                        id="novaInput"
+
+                        type="text"
+
+                        placeholder="Talk to NOVA..."
+
+                    >
+
+                    <button id="novaSend">
+
+                        →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TASKBAR -->
+
+        <div class="os-taskbar">
+
+            <button
+
+                class="os-start-button"
+
+                id="osStartButton"
+
+            >
+
+                <span>A.</span>
+
+            </button>
+
+            <div
+
+                class="os-task-apps"
+
+                id="osTaskApps"
+
+            ></div>
+
+            <div class="os-task-right">
+
+                <span>⌁</span>
+
+                <span id="osTaskClock">
+
+                    00:00
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- START MENU -->
+
+        <div
+
+            class="os-start-menu"
+
+            id="osStartMenu"
+
+        >
+
+            <div class="start-brand">
+
+                <span>A.</span>
+
+                <div>
+
+                    <strong>ATHAADA OS</strong>
+
+                    <small>PERSONAL SYSTEM</small>
+
+                </div>
+
+            </div>
+
+            <div class="start-apps">
+
+                <button data-window="aboutWindow">
+
+                    <span>◉</span>
+
+                    About
+
+                </button>
+
+                <button data-window="projectsWindow">
+
+                    <span>▣</span>
+
+                    Projects
+
+                </button>
+
+                <button data-window="skillsWindow">
+
+                    <span>◇</span>
+
+                    Skills
+
+                </button>
+
+                <button data-window="novaWindow">
+
+                    <span>N</span>
+
+                    NOVA AI
+
+                </button>
+
+                <button data-action="terminal">
+
+                    <span>⌘</span>
+
+                    Terminal
+
+                </button>
+
+            </div>
+
+            <button
+
+                class="exit-os"
+
+                onclick="closeOS()"
+
+            >
+
+                EXIT ATHAADA OS
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ================= MUSIC PLAYER ================= -->
+
+    <div class="music-player" id="musicPlayer">
+
+        <div class="music-header">
+
+            <div>
+
+                <span class="music-status">● MUSIC SYSTEM</span>
+
+                <h3>ATHAADA PLAYLIST</h3>
+
+            </div>
+
+            <button
+
+                type="button"
+
+                class="music-close"
+
+                id="musicClose"
+
+            >
+
+                ×
+
+            </button>
+
+        </div>
+
+        <div class="now-playing">
+
+            <div class="music-cover">♫</div>
+
+            <div class="music-info">
+
+                <span>NOW PLAYING</span>
+
+                <strong id="musicTitle">Belum ada lagu</strong>
+
+                <small id="musicArtist">ATHAADA OS</small>
+
+            </div>
+
+        </div>
+
+        <div class="music-progress">
+
+            <span id="musicCurrent">0:00</span>
+
+            <input
+
+                type="range"
+
+                id="musicProgress"
+
+                min="0"
+
+                max="100"
+
+                value="0"
+
+            >
+
+            <span id="musicDuration">0:00</span>
+
+        </div>
+
+        <div class="music-controls">
+
+            <button type="button" id="musicPrev">⏮</button>
+
+            <button
+
+                type="button"
+
+                class="music-play"
+
+                id="musicPlay"
+
+            >
+
+                ▶
+
+            </button>
+
+            <button type="button" id="musicNext">⏭</button>
+
+        </div>
+
+        <div
+
+            class="playlist-list"
+
+            id="playlistList"
+
+        ></div>
+
+        <audio id="audioPlayer"></audio>
+
+    </div>
+
+    <!-- PLAYLIST BUTTON -->
+
+    <button
+       type="button"
+        class="playlist-button"
+       id="playlistButton">
+    🎵 PLAYLIST
+    </button>
+
+    <!-- SCRIPT PALING BAWAH -->
+
+    <script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const playlistButton = document.getElementById("playlistButton");
+    const musicPlayer = document.getElementById("musicPlayer");
+
+    if (!playlistButton || !musicPlayer) {
+        console.log("PLAYLIST ELEMENT TIDAK DITEMUKAN");
+        return;
+    }
+
+    playlistButton.onclick = function () {
+        musicPlayer.classList.toggle("active");
+    };
+
+});
+</script>
+</body>
+
+</html>
