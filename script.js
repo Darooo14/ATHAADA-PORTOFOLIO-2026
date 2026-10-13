@@ -2823,28 +2823,40 @@ console.log(
 
     function startV5() {
 
-        injectV5();
+    injectV5();
 
-        setupV5Reveal();
+    setupV5Reveal();
 
-        updateV5Uptime();
-        updateBuildPercent();
-        randomizePulse();
+    /* FORCE V5 COUNTER */
+    setTimeout(() => {
+        const system = document.getElementById("v5-system");
 
-        setInterval(
-            updateV5Uptime,
-            1000
-        );
+        if (system) {
+            system.classList.add("show");
+            system.classList.add("is-loaded");
+        }
 
-        setInterval(
-            updateBuildPercent,
-            1200
-        );
+        animateV5Counters();
+    }, 100);
 
-        setInterval(
-            randomizePulse,
-            900
-        );
+    updateV5Uptime();
+    updateBuildPercent();
+    randomizePulse();
+
+    setInterval(
+        updateV5Uptime,
+        1000
+    );
+
+    setInterval(
+        updateBuildPercent,
+        1200
+    );
+
+    setInterval(
+        randomizePulse,
+        900
+    );
 
     }
 
@@ -3288,7 +3300,7 @@ console.log(
 
     v6.id = "athaadaV6";
     v6.className = "reveal";
-
+    
     v6.innerHTML = `
         <div class="v6-shell">
 
