@@ -3728,5 +3728,11 @@ MODE: BUILDING`;
         }
 
     });
+    /* ================= START V6 ================= */
 
+    const v6 = document.getElementById("athaadaV6");
+
+    if (v6) {
+        v6.style.display = "block";
+    }
 })();
