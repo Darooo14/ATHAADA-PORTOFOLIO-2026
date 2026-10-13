@@ -2345,3 +2345,1388 @@ console.log(
 console.log(
     "Welcome to ATHAADA OS."
 );
+/* =========================================================
+   ATHAADA V5 — LIVE SYSTEM ENGINE
+   Additive only.
+   ATHAADA OS DESKTOP TETAP AMAN.
+========================================================= */
+
+(() => {
+    "use strict";
+
+    /* ================= V5 HTML AUTO INJECT ================= */
+
+    const v5System = `
+        <section class="v5-system reveal" id="v5-system">
+
+            <div class="v5-system-shell">
+
+                <div class="v5-system-head">
+                    <div>
+                        <span class="v5-label">ATHAADA // SYSTEM MONITOR</span>
+                        <h2 class="v5-system-title">
+                            LIVE SYSTEM
+                        </h2>
+                    </div>
+
+                    <div class="v5-system-status">
+                        <i></i>
+                        ALL SYSTEMS ONLINE
+                    </div>
+                </div>
+
+                <div class="v5-metrics">
+
+                    <div class="v5-metric">
+                        <small>SYSTEM STATUS</small>
+                        <strong class="v5-counter" data-target="98">0%</strong>
+                        <span>Operational</span>
+                    </div>
+
+                    <div class="v5-metric">
+                        <small>PROJECTS</small>
+                        <strong class="v5-counter" data-target="03">0</strong>
+                        <span>Active builds</span>
+                    </div>
+
+                    <div class="v5-metric">
+                        <small>UPTIME</small>
+                        <strong id="v5Uptime">00:00</strong>
+                        <span>Session uptime</span>
+                    </div>
+
+                    <div class="v5-metric">
+                        <small>BUILD MODE</small>
+                        <strong>ON</strong>
+                        <span>Experimenting</span>
+                    </div>
+
+                </div>
+
+                <div class="v5-bars">
+
+                    <div class="v5-bar-row">
+                        <span>WEB</span>
+                        <div class="v5-bar">
+                            <span></span>
+                        </div>
+                        <b>98%</b>
+                    </div>
+
+                    <div class="v5-bar-row">
+                        <span>JAVASCRIPT</span>
+                        <div class="v5-bar">
+                            <span></span>
+                        </div>
+                        <b>91%</b>
+                    </div>
+
+                    <div class="v5-bar-row">
+                        <span>PYTHON</span>
+                        <div class="v5-bar">
+                            <span></span>
+                        </div>
+                        <b>86%</b>
+                    </div>
+
+                    <div class="v5-bar-row">
+                        <span>AI / ML</span>
+                        <div class="v5-bar">
+                            <span></span>
+                        </div>
+                        <b>94%</b>
+                    </div>
+
+                </div>
+
+                <div class="v5-monitor">
+
+                    <div class="v5-monitor-box">
+
+                        <div class="v5-monitor-head">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <span>NOVA_MONITOR</span>
+                        </div>
+
+                        <div class="v5-monitor-body">
+                            <p>&gt; initializing NOVA monitor...</p>
+                            <p>&gt; checking memory........ <b>OK</b></p>
+                            <p>&gt; checking interface..... <b>OK</b></p>
+                            <p>&gt; checking response....... <b>OK</b></p>
+                            <p>&gt; neural interface........ <b>ONLINE</b></p>
+                            <p>&gt; system state............. <span class="v5-green">READY</span></p>
+                        </div>
+
+                    </div>
+
+                    <div class="v5-monitor-box">
+
+                        <div class="v5-monitor-head">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <span>ACTIVITY_FEED</span>
+                        </div>
+
+                        <div class="v5-monitor-body">
+                            <p>[LIVE] portfolio system loaded</p>
+                            <p>[LIVE] V4 interface detected</p>
+                            <p>[LIVE] V5 engine started</p>
+                            <p>[SCAN] project matrix........ <b>03</b></p>
+                            <p>[SCAN] skill matrix.......... <b>05</b></p>
+                            <p>[STATUS] everything nominal</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="v5-spotlight reveal">
+
+            <div class="v5-section-head">
+                <small>05 // PROJECT SPOTLIGHT</small>
+
+                <h2>
+                    NOW <span>BUILDING.</span>
+                </h2>
+            </div>
+
+            <div class="v5-spotlight-card">
+
+                <div class="v5-spotlight-main">
+
+                    <div class="v5-spotlight-status">
+                        <i></i>
+                        CURRENT BUILD
+                    </div>
+
+                    <h3>NOVA<br>AI</h3>
+
+                    <p>
+                        Eksperimen AI personal dengan interface chat,
+                        memory percakapan, sistem backend, dan berbagai
+                        eksperimen model untuk membangun pengalaman AI sendiri.
+                    </p>
+
+                    <div class="v5-spotlight-tags">
+                        <span>PYTHON</span>
+                        <span>FLASK</span>
+                        <span>AI</span>
+                        <span>JAVASCRIPT</span>
+                    </div>
+
+                </div>
+
+                <div class="v5-spotlight-visual">
+                    <div class="v5-core">
+                        N.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="v5-build">
+
+                <div class="v5-build-top">
+                    <span>BUILD PROGRESS</span>
+                    <span id="v5BuildPercent">72%</span>
+                </div>
+
+                <div class="v5-build-track">
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="v5-pulse reveal">
+
+            <div class="v5-pulse-shell">
+
+                <div class="v5-pulse-head">
+                    <strong>SYSTEM PULSE</strong>
+                    <span>REALTIME ACTIVITY</span>
+                </div>
+
+                <div class="v5-wave">
+
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+
+                </div>
+
+            </div>
+
+        </section>
+    `;
+
+
+    /* ================= INSERT V5 ================= */
+
+    function injectV5() {
+
+        if (document.getElementById("v5-system")) {
+            return;
+        }
+
+        const footer = document.querySelector("footer");
+
+        if (!footer) {
+            console.warn("V5: footer tidak ditemukan.");
+            return;
+        }
+
+        footer.insertAdjacentHTML(
+            "beforebegin",
+            v5System
+        );
+    }
+
+
+    /* ================= COUNTER ================= */
+
+    function animateV5Counters() {
+
+        const counters =
+            document.querySelectorAll(".v5-counter");
+
+        counters.forEach(counter => {
+
+            if (counter.dataset.animated === "true") {
+                return;
+            }
+
+            const target =
+                Number(counter.dataset.target);
+
+            if (!Number.isFinite(target)) {
+                return;
+            }
+
+            counter.dataset.animated = "true";
+
+            let current = 0;
+
+            const duration = 1200;
+            const start = performance.now();
+
+            function update(now) {
+
+                const progress =
+                    Math.min(
+                        (now - start) / duration,
+                        1
+                    );
+
+                const eased =
+                    1 - Math.pow(1 - progress, 3);
+
+                current =
+                    Math.round(target * eased);
+
+                if (target < 10) {
+                    counter.textContent =
+                        String(current).padStart(2, "0");
+                } else {
+                    counter.textContent =
+                        current + "%";
+                }
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+
+            }
+
+            requestAnimationFrame(update);
+
+        });
+
+    }
+
+
+    /* ================= UPTIME ================= */
+
+    const v5StartTime = Date.now();
+
+    function updateV5Uptime() {
+
+        const element =
+            document.getElementById("v5Uptime");
+
+        if (!element) {
+            return;
+        }
+
+        const elapsed =
+            Math.floor(
+                (Date.now() - v5StartTime) / 1000
+            );
+
+        const hours =
+            Math.floor(elapsed / 3600);
+
+        const minutes =
+            Math.floor((elapsed % 3600) / 60);
+
+        const seconds =
+            elapsed % 60;
+
+        const formatted =
+            [
+                hours,
+                minutes,
+                seconds
+            ]
+                .map(value =>
+                    String(value).padStart(2, "0")
+                )
+                .join(":");
+
+        element.textContent = formatted;
+
+    }
+
+
+    /* ================= BUILD PERCENT ================= */
+
+    function updateBuildPercent() {
+
+        const element =
+            document.getElementById("v5BuildPercent");
+
+        if (!element) {
+            return;
+        }
+
+        const base = 72;
+
+        const variation =
+            Math.sin(Date.now() / 1800) * 3;
+
+        const value =
+            Math.round(base + variation);
+
+        element.textContent =
+            value + "%";
+
+    }
+
+
+    /* ================= REVEAL V5 ================= */
+
+    function setupV5Reveal() {
+
+        const elements =
+            document.querySelectorAll(
+                "#v5-system.reveal, .v5-spotlight.reveal, .v5-pulse.reveal"
+            );
+
+        if (!elements.length) {
+            return;
+        }
+
+        if (!("IntersectionObserver" in window)) {
+
+            elements.forEach(element => {
+                element.classList.add("show");
+            });
+
+            animateV5Counters();
+            return;
+        }
+
+        const observer =
+            new IntersectionObserver(
+                entries => {
+
+                    entries.forEach(entry => {
+
+                        if (!entry.isIntersecting) {
+                            return;
+                        }
+
+                        entry.target.classList.add("show");
+
+                        if (
+                            entry.target.id ===
+                            "v5-system"
+                        ) {
+                            entry.target.classList.add(
+                                "is-loaded"
+                            );
+
+                            animateV5Counters();
+                        }
+
+                        observer.unobserve(
+                            entry.target
+                        );
+
+                    });
+
+                },
+                {
+                    threshold: .15
+                }
+            );
+
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+
+    }
+
+
+    /* ================= PULSE RANDOMIZER ================= */
+
+    function randomizePulse() {
+
+        const bars =
+            document.querySelectorAll(
+                ".v5-wave i"
+            );
+
+        bars.forEach(bar => {
+
+            const height =
+                Math.floor(
+                    Math.random() * 75
+                ) + 20;
+
+            bar.style.height =
+                height + "%";
+
+        });
+
+    }
+
+
+    /* ================= START V5 ================= */
+
+    function startV5() {
+
+        injectV5();
+
+        setupV5Reveal();
+
+        updateV5Uptime();
+        updateBuildPercent();
+        randomizePulse();
+
+        setInterval(
+            updateV5Uptime,
+            1000
+        );
+
+        setInterval(
+            updateBuildPercent,
+            1200
+        );
+
+        setInterval(
+            randomizePulse,
+            900
+        );
+
+    }
+
+
+    /* ================= DOM READY ================= */
+
+    if (document.readyState === "loading") {
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            startV5
+        );
+
+    } else {
+
+        startV5();
+
+    }
+
+})();
+/* =========================================================
+   ATHAADA V6 — LIVE COMMAND CENTER
+   ADDITIVE ONLY
+   ATHAADA OS DESKTOP TIDAK DISENTUH
+========================================================= */
+
+(() => {
+    if (document.getElementById("athaadaV6")) return;
+
+    const style = document.createElement("style");
+
+    style.textContent = `
+        /* ================= V6 ROOT ================= */
+
+        #athaadaV6 {
+            width: min(1180px, 90%);
+            margin: 150px auto 110px;
+            position: relative;
+            z-index: 3;
+            color: #fff;
+        }
+
+        .v6-shell {
+            border: 1px solid rgba(255,255,255,.12);
+            background:
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(255,255,255,.06),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,.045),
+                    rgba(255,255,255,.008)
+                );
+            overflow: hidden;
+        }
+
+        /* ================= HEADER ================= */
+
+        .v6-head {
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 25px;
+            border-bottom: 1px solid rgba(255,255,255,.08);
+        }
+
+        .v6-kicker {
+            color: #666;
+            font: 9px monospace;
+            letter-spacing: 3px;
+        }
+
+        .v6-title {
+            margin-top: 10px;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(34px, 6vw, 68px);
+            line-height: .9;
+            letter-spacing: -4px;
+        }
+
+        .v6-title span {
+            color: #666;
+        }
+
+        .v6-live {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 10px 13px;
+            border: 1px solid rgba(255,255,255,.12);
+            color: #888;
+            font: 9px monospace;
+            letter-spacing: 1.5px;
+            white-space: nowrap;
+        }
+
+        .v6-live i {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #a8ff9d;
+            box-shadow: 0 0 14px #a8ff9d;
+            animation: v6Blink 1.5s infinite;
+        }
+
+        @keyframes v6Blink {
+            50% {
+                opacity: .25;
+                transform: scale(.65);
+            }
+        }
+
+        /* ================= TELEMETRY ================= */
+
+        .v6-telemetry {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: rgba(255,255,255,.08);
+        }
+
+        .v6-stat {
+            min-height: 145px;
+            padding: 22px;
+            background: #070707;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .v6-stat::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255,255,255,.4),
+                transparent
+            );
+            transform: translateX(-100%);
+            animation: v6Scan 4s linear infinite;
+        }
+
+        @keyframes v6Scan {
+            to {
+                transform: translateX(100%);
+            }
+        }
+
+        .v6-stat small {
+            color: #555;
+            font: 8px monospace;
+            letter-spacing: 2px;
+        }
+
+        .v6-stat strong {
+            display: block;
+            margin-top: 22px;
+            font: 700 30px "Space Grotesk", sans-serif;
+            letter-spacing: -1px;
+        }
+
+        .v6-stat span {
+            display: block;
+            margin-top: 5px;
+            color: #555;
+            font: 8px monospace;
+        }
+
+        /* ================= MAIN GRID ================= */
+
+        .v6-main {
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 1px;
+            background: rgba(255,255,255,.08);
+        }
+
+        .v6-panel {
+            background: #060606;
+            padding: 28px;
+        }
+
+        .v6-panel-label {
+            color: #555;
+            font: 8px monospace;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+        }
+
+        /* ================= TERMINAL ================= */
+
+        .v6-terminal {
+            min-height: 230px;
+            border: 1px solid rgba(255,255,255,.08);
+            background: #020202;
+            padding: 18px;
+            font: 10px/2 monospace;
+            color: #666;
+        }
+
+        .v6-terminal p {
+            margin: 0;
+        }
+
+        .v6-terminal b {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .v6-ok {
+            color: #a8ff9d !important;
+        }
+
+        .v6-cursor {
+            display: inline-block;
+            width: 6px;
+            height: 11px;
+            background: #fff;
+            margin-left: 3px;
+            vertical-align: middle;
+            animation: v6Cursor .8s infinite;
+        }
+
+        @keyframes v6Cursor {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* ================= MISSION ================= */
+
+        .v6-mission {
+            display: grid;
+            gap: 9px;
+        }
+
+        .v6-mission-card {
+            padding: 17px;
+            border: 1px solid rgba(255,255,255,.08);
+            background: rgba(255,255,255,.015);
+            transition: .25s ease;
+        }
+
+        .v6-mission-card:hover {
+            transform: translateX(5px);
+            border-color: rgba(255,255,255,.22);
+        }
+
+        .v6-mission-card small {
+            display: block;
+            color: #555;
+            font: 8px monospace;
+            letter-spacing: 1.5px;
+        }
+
+        .v6-mission-card strong {
+            display: block;
+            margin-top: 7px;
+            font-size: 13px;
+        }
+
+        .v6-mission-card span {
+            display: block;
+            margin-top: 4px;
+            color: #666;
+            font: 9px monospace;
+        }
+
+        /* ================= ACTIONS ================= */
+
+        .v6-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 18px;
+        }
+
+        .v6-btn {
+            padding: 11px 14px;
+            border: 1px solid rgba(255,255,255,.15);
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            font: 700 8px monospace;
+            letter-spacing: 1.5px;
+            transition: .25s ease;
+        }
+
+        .v6-btn:hover {
+            background: #fff;
+            color: #000;
+            transform: translateY(-2px);
+        }
+
+        .v6-btn.primary {
+            background: #fff;
+            color: #000;
+        }
+
+        /* ================= ACTIVITY ================= */
+
+        .v6-activity {
+            border-top: 1px solid rgba(255,255,255,.08);
+            padding: 20px 28px;
+            background: #050505;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            overflow: hidden;
+        }
+
+        .v6-activity-label {
+            color: #444;
+            font: 8px monospace;
+            letter-spacing: 2px;
+            flex-shrink: 0;
+        }
+
+        .v6-activity-text {
+            color: #777;
+            font: 9px monospace;
+            white-space: nowrap;
+            transition: opacity .25s;
+        }
+
+        .v6-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 0 12px #fff;
+            flex-shrink: 0;
+        }
+
+        /* ================= FOCUS MODE ================= */
+
+        body.v6-focus-mode .v6-stat,
+        body.v6-focus-mode .v6-panel,
+        body.v6-focus-mode .v6-activity {
+            opacity: .35;
+            transition: opacity .3s ease;
+        }
+
+        body.v6-focus-mode #athaadaV6 {
+            opacity: 1;
+        }
+
+        body.v6-focus-mode .v6-shell {
+            border-color: rgba(255,255,255,.35);
+            box-shadow:
+                0 0 0 1px rgba(255,255,255,.05),
+                0 0 80px rgba(255,255,255,.04);
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 850px) {
+
+            .v6-telemetry {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .v6-main {
+                grid-template-columns: 1fr;
+            }
+
+            .v6-head {
+                flex-direction: column;
+            }
+
+            .v6-live {
+                width: fit-content;
+            }
+        }
+
+        @media (max-width: 520px) {
+
+            #athaadaV6 {
+                width: calc(100% - 30px);
+                margin-top: 100px;
+            }
+
+            .v6-head,
+            .v6-panel {
+                padding: 20px;
+            }
+
+            .v6-title {
+                font-size: 42px;
+                letter-spacing: -2px;
+            }
+
+            .v6-stat {
+                min-height: 115px;
+                padding: 16px;
+            }
+
+            .v6-stat strong {
+                font-size: 24px;
+            }
+
+            .v6-activity {
+                padding: 16px;
+            }
+
+            .v6-actions {
+                flex-direction: column;
+            }
+
+            .v6-btn {
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .v6-stat::after,
+            .v6-live i,
+            .v6-cursor {
+                animation: none;
+            }
+
+            .v6-mission-card,
+            .v6-btn {
+                transition: none;
+            }
+        }
+    `;
+
+    document.head.appendChild(style);
+
+    /* ================= HTML ================= */
+
+    const v6 = document.createElement("section");
+
+    v6.id = "athaadaV6";
+    v6.className = "reveal";
+
+    v6.innerHTML = `
+        <div class="v6-shell">
+
+            <div class="v6-head">
+
+                <div>
+                    <div class="v6-kicker">
+                        ATHAADA // COMMAND CENTER
+                    </div>
+
+                    <h2 class="v6-title">
+                       LIVE <span>SYSTEM.</span>
+                    </h2>
+                </div>
+
+                <div class="v6-live">
+                    <i></i>
+                    SYSTEM ONLINE
+                </div>
+
+            </div>
+
+            <div class="v6-telemetry">
+
+                <div class="v6-stat">
+                    <small>LOCAL TIME</small>
+                    <strong id="v6Time">00:00:00</strong>
+                    <span>WIB</span>
+                </div>
+
+                <div class="v6-stat">
+                    <small>SESSION</small>
+                    <strong id="v6Session">00:00</strong>
+                    <span>UPTIME</span>
+                </div>
+
+                <div class="v6-stat">
+                    <small>VIEWPORT</small>
+                    <strong id="v6Viewport">---</strong>
+                    <span>DISPLAY</span>
+                </div>
+
+                <div class="v6-stat">
+                    <small>NETWORK</small>
+                    <strong id="v6Network">ONLINE</strong>
+                    <span id="v6NetworkType">CONNECTION</span>
+                </div>
+
+            </div>
+
+            <div class="v6-main">
+
+                <div class="v6-panel">
+
+                    <div class="v6-panel-label">
+                        SYSTEM TERMINAL
+                    </div>
+
+                    <div class="v6-terminal" id="v6Terminal">
+
+                        <p>&gt; booting command center...</p>
+                        <p>&gt; loading telemetry modules...</p>
+                        <p>&gt; checking interface integrity...</p>
+                        <p>&gt; connection status: <b class="v6-ok">ONLINE</b></p>
+                        <p>&gt; ATHAADA V6 ready.</p>
+                        <p>&gt; <span id="v6TerminalMessage">
+                            awaiting command
+                        </span><span class="v6-cursor"></span></p>
+
+                    </div>
+
+                    <div class="v6-actions">
+
+                        <button
+                            type="button"
+                            class="v6-btn primary"
+                            id="v6SystemCheck">
+                            RUN SYSTEM CHECK
+                        </button>
+
+                        <button
+                            type="button"
+                            class="v6-btn"
+                            id="v6Focus">
+                            FOCUS MODE
+                        </button>
+
+                        <button
+                            type="button"
+                            class="v6-btn"
+                            id="v6Copy">
+                            COPY STATUS
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="v6-panel">
+
+                    <div class="v6-panel-label">
+                        MISSION CONTROL
+                    </div>
+
+                    <div class="v6-mission">
+
+                        <div class="v6-mission-card">
+                            <small>NOW BUILDING</small>
+                            <strong>ATHAADA V6</strong>
+                            <span>LIVE COMMAND CENTER</span>
+                        </div>
+
+                        <div class="v6-mission-card">
+                            <small>CORE FOCUS</small>
+                            <strong>WEB / AI / TECH</strong>
+                            <span>EXPERIMENTAL SYSTEMS</span>
+                        </div>
+
+                        <div class="v6-mission-card">
+                            <small>PROJECT STATUS</small>
+                            <strong>ACTIVE</strong>
+                            <span>CONTINUOUS DEVELOPMENT</span>
+                        </div>
+
+                        <div class="v6-mission-card">
+                            <small>PORTFOLIO MODE</small>
+                            <strong>BUILDING</strong>
+                            <span>ALWAYS EXPERIMENTING</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="v6-activity">
+
+                <span class="v6-dot"></span>
+
+                <span class="v6-activity-label">
+                    LIVE FEED
+                </span>
+
+                <span
+                    class="v6-activity-text"
+                    id="v6Activity">
+                    ATHAADA SYSTEM INITIALIZED
+                </span>
+
+            </div>
+
+        </div>
+    `;
+
+    /* ================= INSERT ================= */
+
+    const footer = document.querySelector("footer");
+
+    if (footer) {
+        footer.parentNode.insertBefore(v6, footer);
+    } else {
+        document.body.appendChild(v6);
+    }
+
+    /* ================= CLOCK ================= */
+
+    const v6Time = document.getElementById("v6Time");
+
+    function updateV6Time() {
+        if (!v6Time) return;
+
+        const now = new Date();
+
+        v6Time.textContent =
+            now.toLocaleTimeString("id-ID", {
+                hour12: false,
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit"
+            });
+    }
+
+    updateV6Time();
+    setInterval(updateV6Time, 1000);
+
+    /* ================= SESSION ================= */
+
+    const sessionStart = Date.now();
+    const sessionEl = document.getElementById("v6Session");
+
+    function updateSession() {
+        if (!sessionEl) return;
+
+        const seconds =
+            Math.floor((Date.now() - sessionStart) / 1000);
+
+        const minutes =
+            Math.floor(seconds / 60);
+
+        const secs =
+            seconds % 60;
+
+        sessionEl.textContent =
+            String(minutes).padStart(2, "0") +
+            ":" +
+            String(secs).padStart(2, "0");
+    }
+
+    updateSession();
+    setInterval(updateSession, 1000);
+
+    /* ================= VIEWPORT ================= */
+
+    const viewport = document.getElementById("v6Viewport");
+
+    function updateViewport() {
+        if (!viewport) return;
+
+        viewport.textContent =
+            `${window.innerWidth}×${window.innerHeight}`;
+    }
+
+    updateViewport();
+    window.addEventListener("resize", updateViewport);
+
+    /* ================= NETWORK ================= */
+
+    const network = document.getElementById("v6Network");
+    const networkType =
+        document.getElementById("v6NetworkType");
+
+    function updateNetwork() {
+
+        if (!network) return;
+
+        const online = navigator.onLine;
+
+        network.textContent =
+            online ? "ONLINE" : "OFFLINE";
+
+        network.style.color =
+            online ? "#a8ff9d" : "#ff7777";
+
+        if (networkType) {
+
+            const connection =
+                navigator.connection ||
+                navigator.mozConnection ||
+                navigator.webkitConnection;
+
+            networkType.textContent =
+                connection?.effectiveType
+                    ? connection.effectiveType.toUpperCase()
+                    : online
+                        ? "CONNECTED"
+                        : "NO CONNECTION";
+        }
+    }
+
+    updateNetwork();
+
+    window.addEventListener(
+        "online",
+        updateNetwork
+    );
+
+    window.addEventListener(
+        "offline",
+        updateNetwork
+    );
+
+    /* ================= SYSTEM CHECK ================= */
+
+    const systemCheck =
+        document.getElementById("v6SystemCheck");
+
+    const terminalMessage =
+        document.getElementById("v6TerminalMessage");
+
+    systemCheck?.addEventListener("click", () => {
+
+        const messages = [
+            "scanning interface...",
+            "checking animations...",
+            "checking portfolio modules...",
+            "checking playlist system...",
+            "checking ATHAADA OS...",
+            "checking responsive layout...",
+            "checking network...",
+            "SYSTEM CHECK COMPLETE"
+        ];
+
+        let index = 0;
+
+        systemCheck.disabled = true;
+
+        const timer = setInterval(() => {
+
+            if (terminalMessage) {
+                terminalMessage.textContent =
+                    messages[index];
+            }
+
+            index++;
+
+            if (index >= messages.length) {
+
+                clearInterval(timer);
+
+                systemCheck.disabled = false;
+
+                if (typeof showToast === "function") {
+                    showToast("ATHAADA V6 SYSTEM CHECK COMPLETE");
+                }
+            }
+
+        }, 350);
+    });
+
+    /* ================= FOCUS MODE ================= */
+
+    const focusButton =
+        document.getElementById("v6Focus");
+
+    focusButton?.addEventListener("click", () => {
+
+        document.body.classList.toggle(
+            "v6-focus-mode"
+        );
+
+        const active =
+            document.body.classList.contains(
+                "v6-focus-mode"
+            );
+
+        focusButton.textContent =
+            active
+                ? "EXIT FOCUS"
+                : "FOCUS MODE";
+
+        if (typeof showToast === "function") {
+            showToast(
+                active
+                    ? "Focus mode enabled."
+                    : "Focus mode disabled."
+            );
+        }
+    });
+
+    /* ================= COPY STATUS ================= */
+
+    const copyButton =
+        document.getElementById("v6Copy");
+
+    copyButton?.addEventListener("click", async () => {
+
+        const status =
+`ATHAADA ICHIRO
+ATHAADA V6
+SYSTEM: ONLINE
+NETWORK: ${navigator.onLine ? "ONLINE" : "OFFLINE"}
+VIEWPORT: ${window.innerWidth}x${window.innerHeight}
+MODE: BUILDING`;
+
+        try {
+
+            await navigator.clipboard.writeText(status);
+
+            if (typeof showToast === "function") {
+                showToast("V6 system status copied.");
+            }
+
+        } catch {
+
+            if (typeof showToast === "function") {
+                showToast("ATHAADA V6");
+            }
+        }
+    });
+
+    /* ================= LIVE FEED ================= */
+
+    const activity =
+        document.getElementById("v6Activity");
+
+    const feeds = [
+        "ATHAADA SYSTEM INITIALIZED",
+        "LIVE TELEMETRY CONNECTED",
+        "PORTFOLIO MODULES ONLINE",
+        "ATHAADA OS PRESERVED",
+        "PLAYLIST SYSTEM READY",
+        "V6 COMMAND CENTER ACTIVE",
+        "BUILD MODE: ALWAYS EXPERIMENTING"
+    ];
+
+    let feedIndex = 0;
+
+    setInterval(() => {
+
+        if (!activity) return;
+
+        activity.style.opacity = "0";
+
+        setTimeout(() => {
+
+            feedIndex =
+                (feedIndex + 1) % feeds.length;
+
+            activity.textContent =
+                feeds[feedIndex];
+
+            activity.style.opacity = "1";
+
+        }, 250);
+
+    }, 3000);
+
+    /* ================= KEYBOARD ================= */
+
+    document.addEventListener("keydown", event => {
+
+        if (
+            event.ctrlKey &&
+            event.shiftKey &&
+            event.key.toLowerCase() === "a"
+        ) {
+
+            event.preventDefault();
+
+            document
+                .getElementById("athaadaV6")
+                ?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+        }
+
+    });
+
+})();
