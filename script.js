@@ -3316,7 +3316,7 @@ console.log(
 
     /* ================= HTML ================= */
 
-     const v6Element = document.getElementById("athaadaV6");
+   const v6 = document.createElement("section");
 
     v6.id = "athaadaV6";
     v6.className = "reveal";
