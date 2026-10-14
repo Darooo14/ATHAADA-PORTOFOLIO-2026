@@ -3296,7 +3296,7 @@ console.log(
 
     /* ================= HTML ================= */
 
-    const v6 = document.createElement("section");
+     const v6Element = document.getElementById("athaadaV6");
 
     v6.id = "athaadaV6";
     v6.className = "reveal";
@@ -3742,9 +3742,8 @@ MODE: BUILDING`;
     });
     /* ================= START V6 ================= */
 
-    const v6 = document.getElementById("athaadaV6");
+    const v6Element = document.getElementById("athaadaV6");
 
-    if (v6) {
-        v6.style.display = "block";
-    }
-})();
+    if (v6Element) {
+    v6Element.style.display = "block";
+}
