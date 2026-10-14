@@ -12,34 +12,54 @@ const loader = document.getElementById("loader");
 const loaderProgress = document.getElementById("loaderProgress");
 const loaderPercent = document.getElementById("loaderPercent");
 
-let loadValue = 0;
+ let loadValue = 0;
 
-const loaderTimer = setInterval(() => {
+function runLoader() {
+    const loader = document.getElementById("loader");
+    const loaderProgress = document.getElementById("loaderProgress");
+    const loaderPercent = document.getElementById("loaderPercent");
 
-    loadValue += Math.floor(Math.random() * 8) + 3;
+    let value = 0;
 
-    if (loadValue >= 100) {
+    const timer = setInterval(() => {
+        value += 5;
 
-        loadValue = 100;
+        if (value >= 100) {
+            value = 100;
+            clearInterval(timer);
 
-        clearInterval(loaderTimer);
+            if (loaderProgress) {
+                loaderProgress.style.width = "100%";
+            }
 
-        setTimeout(() => {
-            loader?.classList.add("hide");
-        }, 400);
+            if (loaderPercent) {
+                loaderPercent.textContent = "100%";
+            }
 
-    }
+            setTimeout(() => {
+                if (loader) {
+                    loader.classList.add("hide");
+                }
+            }, 300);
 
-    if (loaderProgress) {
-        loaderProgress.style.width = `${loadValue}%`;
-    }
+            return;
+        }
 
-    if (loaderPercent) {
-        loaderPercent.textContent = `${loadValue}%`;
-    }
+        if (loaderProgress) {
+            loaderProgress.style.width = value + "%";
+        }
 
-}, 70);
+        if (loaderPercent) {
+            loaderPercent.textContent = value + "%";
+        }
+    }, 100);
+}
 
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", runLoader);
+} else {
+    runLoader();
+}
 
 /* =========================================================
    ELEMENTS
