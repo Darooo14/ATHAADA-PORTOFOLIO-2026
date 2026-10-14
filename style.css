@@ -4280,3 +4280,631 @@ footer {
         padding: 20px;
     }
 }
+/* =========================================================
+   ATHAADA ICHIRO V7 — VISUAL OVERHAUL
+   DESIGN ONLY
+   ATHAADA OS DESKTOP TIDAK DISENTUH
+========================================================= */
+
+:root {
+    --v7-bg: #050505;
+    --v7-panel: rgba(14, 14, 14, .78);
+    --v7-panel-strong: rgba(18, 18, 18, .94);
+    --v7-border: rgba(255,255,255,.09);
+    --v7-border-hover: rgba(255,255,255,.22);
+    --v7-text: #f5f5f5;
+    --v7-muted: #8d8d8d;
+    --v7-soft: #bdbdbd;
+    --v7-green: #a8ff9d;
+    --v7-blue: #8db7ff;
+}
+
+/* ================= GLOBAL PORTFOLIO ================= */
+
+body {
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(255,255,255,.035),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 35%,
+            rgba(130,160,255,.025),
+            transparent 30%
+        ),
+        #050505;
+}
+
+/* subtle grid hanya untuk halaman portfolio */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.018) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.018) 1px,
+            transparent 1px
+        );
+
+    background-size: 70px 70px;
+
+    mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 85%
+    );
+}
+
+/* ================= SECTION STRUCTURE ================= */
+
+.hero,
+.about,
+.skills,
+.projects,
+.journey,
+.contact,
+.system-boot,
+#v5-system,
+#athaadaV6 {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero,
+.about,
+.skills,
+.projects,
+.journey,
+.contact,
+.system-boot {
+    padding-left: clamp(20px, 5vw, 80px);
+    padding-right: clamp(20px, 5vw, 80px);
+}
+
+/* ================= SECTION HEADINGS ================= */
+
+section:not(#athaadaV6):not(#v5-system) .section-title,
+section:not(#athaadaV6):not(#v5-system) h2 {
+    letter-spacing: -1.5px;
+}
+
+section:not(#athaadaV6):not(#v5-system) .section-title::after,
+section:not(#athaadaV6):not(#v5-system) h2::after {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 2px;
+    margin-top: 16px;
+
+    background: linear-gradient(
+        90deg,
+        #fff,
+        transparent
+    );
+
+    opacity: .7;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: clamp(4rem, 11vw, 9.5rem);
+    line-height: .84;
+    letter-spacing: -7px;
+    font-weight: 900;
+    text-shadow:
+        0 0 40px rgba(255,255,255,.035);
+}
+
+.hero h1 span {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,.42);
+}
+
+.hero p {
+    color: var(--v7-muted);
+}
+
+.hero-visual {
+    filter:
+        drop-shadow(0 25px 70px rgba(0,0,0,.65));
+}
+
+/* ================= GLASS PANELS ================= */
+
+.about-card,
+.skill-card,
+.project-card,
+.journey-card,
+.contact-card,
+.command-card-v3,
+.building-card-v3,
+.activity-item-v3,
+.v5-panel,
+.v5-project-preview,
+.v5-terminal,
+.v6-panel,
+.v6-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.012)
+        );
+
+    border: 1px solid var(--v7-border);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.28),
+        inset 0 1px 0 rgba(255,255,255,.035);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+/* ================= ABOUT ================= */
+
+.about-card {
+    border-radius: 28px;
+    padding: clamp(22px, 4vw, 42px);
+    transition:
+        transform .45s cubic-bezier(.2,.8,.2,1),
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--v7-border-hover);
+
+    box-shadow:
+        0 35px 90px rgba(0,0,0,.42),
+        0 0 0 1px rgba(255,255,255,.025);
+}
+
+.profile-image {
+    border-radius: 22px;
+    filter: grayscale(.15) contrast(1.05);
+    box-shadow:
+        0 20px 55px rgba(0,0,0,.55);
+}
+
+/* ================= SKILLS ================= */
+
+.skill-card {
+    border-radius: 22px;
+    padding: 24px;
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        background .35s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,.2);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.075),
+            rgba(255,255,255,.015)
+        );
+}
+
+.skill-card::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 35%;
+    margin-bottom: 18px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(255,255,255,.65),
+        transparent
+    );
+}
+
+/* ================= PROJECTS ================= */
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+
+    transition:
+        transform .4s cubic-bezier(.2,.8,.2,1),
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at var(--mx, 50%) var(--my, 50%),
+            rgba(255,255,255,.075),
+            transparent 35%
+        );
+
+    opacity: 0;
+    transition: opacity .3s ease;
+    pointer-events: none;
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-9px);
+    border-color: rgba(255,255,255,.2);
+
+    box-shadow:
+        0 35px 90px rgba(0,0,0,.48);
+}
+
+.project-card h3 {
+    letter-spacing: -.5px;
+}
+
+/* project tags */
+
+.project-card .tag,
+.project-card .tech,
+.project-card span {
+    transition:
+        background .25s ease,
+        border-color .25s ease;
+}
+
+/* ================= JOURNEY ================= */
+
+.journey-card {
+    border-radius: 20px;
+    transition:
+        transform .35s ease,
+        border-color .35s ease;
+}
+
+.journey-card:hover {
+    transform: translateX(7px);
+    border-color: rgba(255,255,255,.2);
+}
+
+/* ================= SYSTEM BOOT ================= */
+
+.system-boot {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(168,255,157,.025),
+            transparent 55%
+        );
+}
+
+.boot-terminal {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.035),
+            rgba(0,0,0,.45)
+        );
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35);
+}
+
+/* ================= V5 ================= */
+
+#v5-system {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    border-radius: 34px;
+
+    background:
+        radial-gradient(
+            circle at 10% 0%,
+            rgba(168,255,157,.045),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(141,183,255,.035),
+            transparent 30%
+        ),
+        rgba(7,7,7,.78);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 45px 120px rgba(0,0,0,.5),
+        inset 0 1px 0 rgba(255,255,255,.035);
+
+    overflow: hidden;
+}
+
+#v5-system::before {
+    content: "V5 // SYSTEM TELEMETRY";
+
+    position: absolute;
+    top: 20px;
+    right: 28px;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,.25);
+}
+
+.v5-panel,
+.v5-project-preview,
+.v5-terminal {
+    border-radius: 22px;
+}
+
+.v5-activity-item {
+    transition:
+        transform .25s ease,
+        border-color .25s ease;
+}
+
+.v5-activity-item:hover {
+    transform: translateX(5px);
+    border-color: rgba(168,255,157,.2);
+}
+
+/* ================= V6 COMMAND CENTER ================= */
+
+#athaadaV6 {
+    margin: 110px auto 120px;
+    width: min(1180px, calc(100% - 40px));
+
+    border-radius: 38px;
+
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(168,255,157,.045),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(141,183,255,.04),
+            transparent 32%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(18,18,18,.96),
+            rgba(5,5,5,.98)
+        );
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    box-shadow:
+        0 50px 140px rgba(0,0,0,.65),
+        inset 0 1px 0 rgba(255,255,255,.045);
+
+    overflow: hidden;
+}
+
+#athaadaV6::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.018) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.018) 1px,
+            transparent 1px
+        );
+
+    background-size: 55px 55px;
+    pointer-events: none;
+}
+
+#athaadaV6 .v6-shell {
+    position: relative;
+    z-index: 1;
+}
+
+#athaadaV6 .v6-head {
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    padding-bottom: 26px;
+}
+
+#athaadaV6 .v6-card,
+#athaadaV6 .v6-panel {
+    border-radius: 22px;
+
+    transition:
+        transform .35s cubic-bezier(.2,.8,.2,1),
+        border-color .3s ease,
+        background .3s ease;
+}
+
+#athaadaV6 .v6-card:hover,
+#athaadaV6 .v6-panel:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,.19);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.065),
+            rgba(255,255,255,.015)
+        );
+}
+
+/* V6 status lights */
+
+#athaadaV6 .v6-dot {
+    box-shadow:
+        0 0 0 4px rgba(168,255,157,.035),
+        0 0 18px rgba(168,255,157,.45);
+}
+
+/* ================= CONTACT ================= */
+
+.contact-card {
+    border-radius: 28px;
+    transition:
+        transform .35s ease,
+        border-color .3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,.2);
+}
+
+/* ================= PLAYLIST ================= */
+
+.playlist-button {
+    border-radius: 999px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.09),
+            rgba(255,255,255,.025)
+        ) !important;
+
+    border: 1px solid rgba(255,255,255,.16) !important;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.4),
+        inset 0 1px 0 rgba(255,255,255,.06);
+
+    backdrop-filter: blur(16px);
+}
+
+.playlist-button:hover {
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.55),
+        0 0 25px rgba(255,255,255,.08);
+}
+
+/* ================= SMOOTH INTERACTION ================= */
+
+.project-card,
+.skill-card,
+.about-card,
+.journey-card,
+.contact-card,
+.v5-panel,
+.v5-project-preview,
+.v6-card,
+.v6-panel {
+    will-change: transform;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .hero h1 {
+        font-size: clamp(3.4rem, 17vw, 6rem);
+        letter-spacing: -4px;
+    }
+
+    .hero,
+    .about,
+    .skills,
+    .projects,
+    .journey,
+    .contact,
+    .system-boot {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    #v5-system {
+        border-radius: 24px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    #athaadaV6 {
+        width: calc(100% - 24px);
+        margin: 70px auto 80px;
+        border-radius: 26px;
+    }
+
+    #athaadaV6 .v6-card:hover,
+    #athaadaV6 .v6-panel:hover {
+        transform: none;
+    }
+
+    .about-card,
+    .contact-card {
+        border-radius: 22px;
+    }
+
+    .project-card:hover,
+    .skill-card:hover,
+    .journey-card:hover,
+    .contact-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .playlist-button {
+        right: 14px !important;
+        bottom: 14px !important;
+    }
+}
+
+/* ================= REDUCE MOTION ================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .project-card,
+    .skill-card,
+    .about-card,
+    .journey-card,
+    .contact-card,
+    .v5-panel,
+    .v5-project-preview,
+    .v6-card,
+    .v6-panel {
+        transition: none !important;
+    }
+}
