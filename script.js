@@ -3760,10 +3760,12 @@ MODE: BUILDING`;
         }
 
     });
-    /* ================= START V6 ================= */
+ /* ================= START V6 ================= */
 
-    const v6Element = document.getElementById("athaadaV6");
+const v6Element = document.getElementById("athaadaV6");
 
-    if (v6Element) {
+if (v6Element) {
     v6Element.style.display = "block";
+}
+
 })();
