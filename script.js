@@ -3766,4 +3766,4 @@ MODE: BUILDING`;
 
     if (v6Element) {
     v6Element.style.display = "block";
-}
+})();
