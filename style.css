@@ -7715,3 +7715,318 @@ button:not(.music-control):not(.os-button) {
         transform: none !important;
     }
 }
+/* =========================================================
+   ATHAADA FIX — JOURNEY / PROJECT MATRIX / SKILL MATRIX
+   HARD VISUAL OVERRIDE
+   ATHAADA OS DESKTOP TIDAK DISENTUH
+========================================================= */
+
+/* ================= JOURNEY ================= */
+
+#journey {
+    width: min(1180px, 92vw) !important;
+    margin: 0 auto !important;
+    padding: 100px 0 !important;
+}
+
+#journey > .section-heading {
+    display: grid !important;
+    grid-template-columns: auto 1fr auto !important;
+    gap: 24px !important;
+    align-items: end !important;
+    margin-bottom: 55px !important;
+}
+
+#journey .timeline {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding-left: 55px !important;
+    border-left: 1px solid rgba(255,255,255,.15) !important;
+}
+
+#journey .timeline-item {
+    position: relative !important;
+    display: block !important;
+    min-height: 0 !important;
+    margin: 0 0 28px !important;
+    padding: 28px 32px !important;
+    border: 1px solid rgba(255,255,255,.10) !important;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.012)
+        ) !important;
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        background .3s ease !important;
+}
+
+#journey .timeline-item:hover {
+    transform: translateX(8px) !important;
+    border-color: rgba(255,255,255,.3) !important;
+    background: rgba(255,255,255,.06) !important;
+}
+
+#journey .timeline-marker {
+    position: absolute !important;
+    left: -72px !important;
+    top: 28px !important;
+    width: 34px !important;
+    height: 34px !important;
+    display: grid !important;
+    place-items: center !important;
+    border: 1px solid rgba(255,255,255,.3) !important;
+    border-radius: 50% !important;
+    background: #050505 !important;
+    color: #fff !important;
+    font: 700 10px monospace !important;
+    z-index: 5 !important;
+}
+
+#journey .timeline-content > span {
+    display: block !important;
+    margin-bottom: 8px !important;
+    color: #777 !important;
+    font: 700 9px monospace !important;
+    letter-spacing: 2px !important;
+}
+
+#journey .timeline-content h3 {
+    margin: 0 !important;
+    color: #fff !important;
+    font-size: clamp(20px, 3vw, 30px) !important;
+    line-height: 1.1 !important;
+    letter-spacing: -1px !important;
+}
+
+#journey .timeline-content p {
+    max-width: 700px !important;
+    margin: 12px 0 0 !important;
+    color: #888 !important;
+    font-size: 12px !important;
+    line-height: 1.8 !important;
+}
+
+
+/* ================= PROJECT MATRIX ================= */
+
+#project-matrix {
+    width: min(1180px, 92vw) !important;
+    margin: 0 auto !important;
+    padding: 100px 0 !important;
+}
+
+#project-matrix > div:not(.section-heading-v4) {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+}
+
+#project-matrix .v4-project-card,
+#project-matrix article {
+    position: relative !important;
+    min-height: 360px !important;
+    padding: 26px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+    border: 1px solid rgba(255,255,255,.12) !important;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.012)
+        ) !important;
+    overflow: hidden !important;
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        background .3s ease !important;
+}
+
+#project-matrix .v4-project-card:hover,
+#project-matrix article:hover {
+    transform: translateY(-8px) !important;
+    border-color: rgba(255,255,255,.35) !important;
+    background: rgba(255,255,255,.065) !important;
+}
+
+#project-matrix article h3 {
+    margin: 0 0 12px !important;
+    color: #fff !important;
+    font-size: 26px !important;
+    line-height: 1 !important;
+}
+
+#project-matrix article p {
+    margin: 0 !important;
+    color: #888 !important;
+    font-size: 12px !important;
+    line-height: 1.75 !important;
+}
+
+#project-matrix .v4-project-top,
+#project-matrix .project-top {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+#project-matrix .v4-project-icon {
+    margin: 55px 0 18px !important;
+    color: #777 !important;
+    font: 700 11px monospace !important;
+    letter-spacing: 4px !important;
+}
+
+#project-matrix .v4-tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    margin-top: auto !important;
+    padding: 20px 0 !important;
+}
+
+#project-matrix .v4-tags span {
+    padding: 6px 8px !important;
+    border: 1px solid rgba(255,255,255,.12) !important;
+    color: #777 !important;
+    font: 8px monospace !important;
+    letter-spacing: 1px !important;
+}
+
+
+/* ================= SKILL MATRIX ================= */
+
+#skill-radar {
+    width: min(1180px, 92vw) !important;
+    margin: 0 auto !important;
+    padding: 100px 0 !important;
+}
+
+#skill-radar > div:not(.section-heading-v4) {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 35px !important;
+    align-items: stretch !important;
+}
+
+#skill-radar .v4-skill-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+}
+
+#skill-radar .v4-skill {
+    margin: 0 !important;
+    padding: 18px 20px !important;
+    border: 1px solid rgba(255,255,255,.1) !important;
+    background: rgba(255,255,255,.025) !important;
+}
+
+#skill-radar .v4-skill > div {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    color: #fff !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+}
+
+#skill-radar .v4-skill b {
+    color: #777 !important;
+    font-size: 10px !important;
+}
+
+#skill-radar .v4-skill i {
+    display: block !important;
+    width: 100% !important;
+    height: 4px !important;
+    margin-top: 12px !important;
+    background: rgba(255,255,255,.08) !important;
+    overflow: hidden !important;
+}
+
+#skill-radar .v4-skill i span {
+    display: block !important;
+    height: 100% !important;
+    width: calc(var(--level, 0) * 1%) !important;
+    background: #fff !important;
+}
+
+#skill-radar .v4-skill-console {
+    min-height: 100% !important;
+    border: 1px solid rgba(255,255,255,.12) !important;
+    background: #030303 !important;
+}
+
+#skill-radar .console-head {
+    height: 38px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 7px !important;
+    padding: 0 14px !important;
+    border-bottom: 1px solid rgba(255,255,255,.08) !important;
+}
+
+#skill-radar .console-head span {
+    width: 7px !important;
+    height: 7px !important;
+    border: 1px solid #555 !important;
+    border-radius: 50% !important;
+}
+
+#skill-radar .console-head label {
+    margin-left: auto !important;
+    color: #555 !important;
+    font: 8px monospace !important;
+    letter-spacing: 1.5px !important;
+}
+
+#skill-radar .v4-skill-console pre {
+    min-height: 250px !important;
+    margin: 0 !important;
+    padding: 24px !important;
+    color: #777 !important;
+    font: 11px/2 monospace !important;
+    white-space: pre-wrap !important;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 850px) {
+
+    #journey {
+        padding: 70px 0 !important;
+    }
+
+    #journey > .section-heading {
+        display: block !important;
+    }
+
+    #journey .timeline {
+        padding-left: 38px !important;
+    }
+
+    #journey .timeline-marker {
+        left: -56px !important;
+    }
+
+    #journey .timeline-item {
+        padding: 22px !important;
+    }
+
+    #project-matrix > div:not(.section-heading-v4),
+    #skill-radar > div:not(.section-heading-v4) {
+        grid-template-columns: 1fr !important;
+    }
+
+    #project-matrix article {
+        min-height: 320px !important;
+    }
+}
