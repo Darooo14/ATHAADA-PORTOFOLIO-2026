@@ -6293,3 +6293,1425 @@ html.js-enabled #contact.contact-section .contact-box.reveal {
 
     pointer-events: auto !important;
 }
+/* =========================================================
+   ATHAADA ICHIRO — TYPOGRAPHY & SPACING POLISH
+   Text cleanup only
+   ATHAADA OS DESKTOP TETAP
+========================================================= */
+
+:root {
+    --text-main: #f5f5f5;
+    --text-soft: #a6a6a6;
+    --text-muted: #707070;
+}
+
+/* =========================
+   GLOBAL TEXT
+========================= */
+
+body {
+    color: var(--text-main);
+    line-height: 1.65;
+    letter-spacing: 0;
+}
+
+p {
+    line-height: 1.75;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) minmax(220px, 420px);
+    align-items: end;
+    gap: 24px;
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    margin: 6px 0 0;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    line-height: .95;
+    letter-spacing: -.055em;
+}
+
+.section-heading p {
+    max-width: 40ch;
+    margin: 0;
+    color: var(--text-soft);
+    line-height: 1.8;
+}
+
+/* =========================
+   EYEBROW / SMALL LABEL
+========================= */
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .22em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--text-soft);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-content {
+    max-width: 760px;
+}
+
+.hero-content h1 {
+    max-width: 10ch;
+    margin: 0;
+    line-height: .88;
+    letter-spacing: -.065em;
+}
+
+.hero-content p {
+    max-width: 58ch;
+    margin-top: 24px;
+    color: var(--text-soft);
+    line-height: 1.85;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-content p {
+    max-width: 65ch;
+    color: var(--text-soft);
+    line-height: 1.85;
+}
+
+.about-content h3 {
+    line-height: 1.15;
+    letter-spacing: -.025em;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill-item h3,
+.skill-card h3 {
+    line-height: 1.15;
+    letter-spacing: -.025em;
+}
+
+.skill-item p,
+.skill-card p {
+    color: var(--text-soft);
+    line-height: 1.7;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-card {
+    overflow: hidden;
+}
+
+.project-card h3 {
+    margin-bottom: 8px;
+    line-height: 1.1;
+    letter-spacing: -.03em;
+}
+
+.project-card p {
+    max-width: 55ch;
+    margin-top: 10px;
+    color: var(--text-soft);
+    line-height: 1.75;
+}
+
+/* =========================
+   JOURNEY
+========================= */
+
+.journey-item h3 {
+    line-height: 1.15;
+    letter-spacing: -.025em;
+}
+
+.journey-item p {
+    max-width: 62ch;
+    color: var(--text-soft);
+    line-height: 1.8;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    line-height: 1;
+    letter-spacing: .08em;
+}
+
+.btn-primary,
+.btn-secondary {
+    white-space: nowrap;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box h2 {
+    max-width: 11ch;
+    line-height: .88;
+    letter-spacing: -.06em;
+}
+
+.contact-box > p {
+    max-width: 55ch;
+    color: var(--text-soft);
+    line-height: 1.8;
+}
+
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+/* =========================
+   SYSTEM BOOT
+========================= */
+
+.system-boot p {
+    line-height: 1.55;
+}
+
+.boot-welcome h2 {
+    line-height: .95;
+    letter-spacing: -.04em;
+}
+
+.boot-welcome p {
+    color: var(--text-soft);
+}
+
+/* =========================
+   V5 / V6 TEXT
+========================= */
+
+#v5-system p,
+#athaadaV6 p {
+    line-height: 1.7;
+}
+
+#v5-system h2,
+#athaadaV6 h2 {
+    line-height: .95;
+    letter-spacing: -.045em;
+}
+
+/* =========================
+   PLAYLIST TEXT
+========================= */
+
+.music-player h3,
+.music-player h4 {
+    line-height: 1.15;
+}
+
+.music-player p {
+    line-height: 1.5;
+}
+
+.playlist-button {
+    line-height: 1;
+    letter-spacing: .12em;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .section-heading {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 38px;
+    }
+
+    .section-heading p {
+        max-width: 55ch;
+    }
+
+    .hero-content h1 {
+        max-width: 11ch;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        line-height: 1.6;
+    }
+
+    .section-heading {
+        gap: 10px;
+        margin-bottom: 32px;
+    }
+
+    .section-heading h2 {
+        font-size: 2.7rem;
+        line-height: .95;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(3.2rem, 16vw, 5rem);
+        line-height: .9;
+    }
+
+    .hero-content p,
+    .about-content p,
+    .project-card p,
+    .journey-item p,
+    .contact-box > p {
+        font-size: .92rem;
+        line-height: 1.75;
+    }
+
+    .eyebrow {
+        font-size: .6rem;
+        letter-spacing: .18em;
+    }
+
+    .contact-actions {
+        width: 100%;
+    }
+
+    .contact-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero-content *,
+    .section-heading *,
+    .project-card *,
+    .journey-item *,
+    .contact-box * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+/* =========================================================
+   ATHAADA ICHIRO — TEXT HIERARCHY V2
+========================================================= */
+
+/* MAIN SECTION RHYTHM */
+.section {
+    scroll-margin-top: 90px;
+}
+
+.section > .container > p,
+.section > .container > .section-description {
+    max-width: 62ch;
+}
+
+/* TITLE SYSTEM */
+h1,
+h2,
+h3,
+h4 {
+    color: #fff;
+    text-wrap: balance;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+/* DESCRIPTION SYSTEM */
+.section p {
+    color: var(--text-soft);
+}
+
+/* CARD TEXT */
+.project-card,
+.skill-card,
+.journey-item {
+    text-align: left;
+}
+
+.project-card h3,
+.skill-card h3,
+.journey-item h3 {
+    font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+}
+
+.project-card p,
+.skill-card p,
+.journey-item p {
+    font-size: .9rem;
+}
+
+/* META / SMALL INFORMATION */
+.project-meta,
+.project-info,
+.card-meta,
+.skill-meta,
+.journey-meta {
+    font-size: .68rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+/* TAGS */
+.tag,
+.skill-tag,
+.project-tag {
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+/* NAVIGATION */
+nav a {
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+}
+
+/* HERO STATUS */
+.hero-status,
+.system-status,
+.status-text {
+    font-size: .68rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+/* CODE / TERMINAL */
+code,
+pre,
+.terminal,
+.terminal-window,
+.code-window {
+    line-height: 1.65;
+    letter-spacing: .01em;
+}
+
+/* CONTACT TERMINAL */
+.contact-terminal {
+    line-height: 1.6;
+}
+
+.contact-terminal strong {
+    font-weight: 600;
+}
+
+/* BUTTON TEXT */
+button {
+    font-family: inherit;
+}
+
+button:not(.music-control):not(.os-button) {
+    font-weight: 700;
+}
+
+/* PROJECT FILTERS */
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-filters button {
+    font-size: .68rem;
+    letter-spacing: .08em;
+}
+
+/* LIST SPACING */
+.about-content p + p,
+.project-card p + p,
+.journey-item p + p {
+    margin-top: 14px;
+}
+
+/* MAKE LONG TEXT EASIER TO READ */
+.about-content,
+.contact-box,
+.project-card,
+.journey-item {
+    overflow-wrap: break-word;
+}
+
+/* PREVENT UGLY SINGLE WORD LINES */
+.about-content p,
+.contact-box p,
+.project-card p,
+.journey-item p {
+    text-wrap: pretty;
+}
+
+/* MOBILE TYPOGRAPHY */
+@media (max-width: 600px) {
+
+    nav a {
+        font-size: .7rem;
+    }
+
+    .project-card h3,
+    .skill-card h3,
+    .journey-item h3 {
+        font-size: 1.05rem;
+    }
+
+    .project-card p,
+    .skill-card p,
+    .journey-item p {
+        font-size: .88rem;
+        line-height: 1.7;
+    }
+
+    .project-filters {
+        gap: 6px;
+    }
+
+    .project-filters button {
+        font-size: .62rem;
+    }
+}
+/* =========================================================
+   ATHAADA ICHIRO — LAYOUT POLISH V3
+   GRID • SPACING • CARD ALIGNMENT
+   ATHAADA OS DESKTOP TIDAK DISENTUH
+========================================================= */
+
+/* =========================
+   SECTION SPACING
+========================= */
+
+.section {
+    padding-top: clamp(80px, 10vw, 140px);
+    padding-bottom: clamp(80px, 10vw, 140px);
+}
+
+.section + .section {
+    border-top: 1px solid rgba(255,255,255,.035);
+}
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.section-heading {
+    position: relative;
+    min-height: 100px;
+}
+
+.section-heading::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    background: linear-gradient(
+        90deg,
+        rgba(255,255,255,.18),
+        rgba(255,255,255,.04),
+        transparent
+    );
+}
+
+/* =========================
+   ABOUT LAYOUT
+========================= */
+
+.about-content {
+    display: grid;
+    grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr);
+    gap: clamp(35px, 7vw, 100px);
+    align-items: center;
+}
+
+.about-content > * {
+    min-width: 0;
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-image {
+    display: block;
+    width: min(100%, 420px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-inline: auto;
+}
+
+/* =========================
+   SKILLS GRID
+========================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.skill-card {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.project-card {
+    min-width: 0;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card > *:last-child {
+    margin-top: auto;
+}
+
+/* =========================
+   JOURNEY
+========================= */
+
+.journey {
+    max-width: 900px;
+    margin-inline: auto;
+}
+
+.journey-item {
+    position: relative;
+    padding: 28px 0;
+}
+
+.journey-item + .journey-item {
+    border-top: 1px solid rgba(255,255,255,.07);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    padding-bottom: 100px;
+}
+
+.contact-box {
+    position: relative;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.contact-actions {
+    margin-top: 28px;
+}
+
+/* =========================
+   VISUAL SEPARATION
+========================= */
+
+.project-card,
+.skill-card {
+    border-color: rgba(255,255,255,.10);
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.project-card:hover,
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255,255,255,.22);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.28);
+}
+
+/* =========================
+   TEXT COLUMN SAFETY
+========================= */
+
+.section-heading > *,
+.about-content > *,
+.project-card > *,
+.skill-card > *,
+.contact-box > * {
+    min-width: 0;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-content .profile-image {
+        max-width: 330px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: 260px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .section-heading {
+        min-height: auto;
+        margin-bottom: 45px;
+    }
+
+    .section-heading::after {
+        bottom: -18px;
+    }
+
+    .about-content {
+        gap: 32px;
+    }
+
+    .about-content .profile-image {
+        max-width: 280px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        gap: 12px;
+    }
+
+    .skill-card {
+        min-height: 160px;
+    }
+
+    .project-card {
+        min-height: 240px;
+    }
+
+    .journey-item {
+        padding: 22px 0;
+    }
+
+    .contact-section {
+        padding-bottom: 70px;
+    }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .project-card,
+    .skill-card {
+        transition: none !important;
+    }
+
+    .project-card:hover,
+    .skill-card:hover {
+        transform: none !important;
+    }
+}
+/* =========================================================
+   ATHAADA ICHIRO — V4 / JOURNEY VISUAL REPAIR
+   FIX: PROJECT MATRIX + SKILL MATRIX + JOURNEY
+   ATHAADA OS DESKTOP TIDAK DISENTUH
+========================================================= */
+
+/* =========================
+   JOURNEY
+========================= */
+
+.journey-section {
+    position: relative;
+    z-index: 2;
+}
+
+.journey-section .section-heading {
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr) minmax(220px, 420px);
+    align-items: end;
+    gap: 24px;
+}
+
+.timeline {
+    position: relative;
+    width: min(100%, 1050px);
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 38px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255,255,255,.16) 10%,
+        rgba(255,255,255,.16) 90%,
+        transparent
+    );
+}
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 76px minmax(0, 1fr);
+    gap: 28px;
+    padding: 28px 0;
+    min-height: 150px;
+}
+
+.timeline-marker {
+    position: relative;
+    z-index: 2;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 50%;
+
+    background: #070707;
+    color: #aaa;
+
+    font: 700 11px/1 monospace;
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 0 0 8px #050505,
+        0 0 30px rgba(255,255,255,.04);
+}
+
+.timeline-content {
+    min-width: 0;
+
+    padding: 25px 28px;
+
+    border: 1px solid rgba(255,255,255,.09);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.045),
+            rgba(255,255,255,.012)
+        );
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        background .3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(6px);
+    border-color: rgba(255,255,255,.2);
+    background: rgba(255,255,255,.055);
+}
+
+.timeline-content > span {
+    display: block;
+    margin-bottom: 9px;
+
+    color: #666;
+
+    font: 700 9px/1.4 monospace;
+    letter-spacing: 2px;
+}
+
+.timeline-content h3 {
+    margin: 0 0 10px;
+
+    color: #f5f5f5;
+
+    font-size: clamp(1.1rem, 2vw, 1.55rem);
+    line-height: 1.05;
+    letter-spacing: -.035em;
+}
+
+.timeline-content p {
+    max-width: 65ch;
+    margin: 0;
+
+    color: #888;
+
+    font-size: .9rem;
+    line-height: 1.75;
+}
+
+
+/* =========================
+   V4 CONTAINER
+========================= */
+
+.v4-projects,
+.v4-skills {
+    position: relative;
+    z-index: 2;
+
+    width: min(1200px, 92vw);
+    max-width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================
+   V4 SECTION HEADER
+========================= */
+
+.section-heading-v4 {
+    position: relative;
+
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 30px;
+
+    margin-bottom: 34px;
+}
+
+.section-heading-v4 > div {
+    min-width: 0;
+}
+
+.section-heading-v4 .v4-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+    color: #777;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.section-heading-v4 h2 {
+    margin: 0 !important;
+
+    color: #f5f5f5;
+
+    font-size: clamp(2.3rem, 5vw, 4.5rem) !important;
+    line-height: .92 !important;
+
+    letter-spacing: -.055em !important;
+}
+
+.section-heading-v4 h2 em {
+    color: #777;
+    font-style: normal;
+}
+
+.v4-index {
+    flex-shrink: 0;
+
+    color: #555;
+
+    font: 9px/1 monospace;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   PROJECT MATRIX
+========================= */
+
+.v4-project-grid {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 14px !important;
+
+    width: 100%;
+}
+
+.v4-project-card {
+    position: relative;
+
+    min-width: 0;
+    min-height: 360px;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    padding: 26px !important;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.1) !important;
+
+    background:
+        linear-gradient(
+            150deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.012)
+        ) !important;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease !important;
+}
+
+.v4-project-card::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255,255,255,.08),
+            transparent 35%
+        );
+
+    opacity: 0;
+
+    transition: opacity .35s ease;
+
+    pointer-events: none;
+}
+
+.v4-project-card:hover {
+    transform: translateY(-8px) !important;
+
+    border-color:
+        rgba(255,255,255,.25) !important;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.35);
+}
+
+.v4-project-card:hover::before {
+    opacity: 1;
+}
+
+.v4-project-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.v4-project-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.v4-project-no {
+    color: #555;
+
+    font: 10px/1 monospace;
+    letter-spacing: 2px;
+}
+
+.v4-status {
+    padding: 6px 9px;
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    color: #888;
+
+    font: 8px/1 monospace;
+    letter-spacing: 1.5px;
+}
+
+.v4-project-icon {
+    margin: 55px 0 18px;
+
+    color: #666;
+
+    font: 700 11px/1 monospace;
+    letter-spacing: 4px;
+}
+
+.v4-project-card h3 {
+    margin: 0 0 10px;
+
+    color: #f5f5f5;
+
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    line-height: 1;
+    letter-spacing: -.04em;
+}
+
+.v4-project-card p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: .82rem;
+    line-height: 1.75;
+}
+
+.v4-tags {
+    display: flex !important;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-top: auto;
+
+    padding: 22px 0 18px;
+}
+
+.v4-tags span {
+    padding: 6px 8px;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    color: #777;
+
+    font: 8px/1 monospace;
+    letter-spacing: 1px;
+}
+
+.v4-project-bottom {
+    display: flex !important;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 14px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    color: #555;
+
+    font: 9px/1 monospace;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   SKILL MATRIX
+========================= */
+
+.v4-skill-grid {
+    display: grid !important;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr) !important;
+
+    gap: 28px !important;
+
+    width: 100%;
+}
+
+.v4-skill-list {
+    min-width: 0;
+}
+
+.v4-skill {
+    margin-bottom: 26px;
+}
+
+.v4-skill > div {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    color: #aaa;
+
+    font: 600 10px/1.4 monospace;
+    letter-spacing: 1.5px;
+}
+
+.v4-skill b {
+    flex-shrink: 0;
+
+    color: #555;
+
+    font-weight: 500;
+}
+
+.v4-skill i {
+    display: block;
+
+    width: 100%;
+    height: 3px;
+
+    margin-top: 10px;
+
+    overflow: hidden;
+
+    background: rgba(255,255,255,.08);
+}
+
+.v4-skill i span {
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    background: #fff;
+
+    transition:
+        width 1.2s cubic-bezier(.2,.8,.2,1);
+}
+
+.v4-skill.is-loaded i span {
+    width: calc(var(--level) * 1%);
+}
+
+
+/* =========================
+   V4 SKILL CONSOLE
+========================= */
+
+.v4-skill-console {
+    min-height: 280px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    background: #050505;
+
+    box-shadow:
+        inset 0 0 50px rgba(255,255,255,.02);
+}
+
+.v4-skill-console pre {
+    min-height: 240px;
+
+    margin: 0;
+    padding: 24px;
+
+    color: #777;
+
+    font: 11px/2 monospace;
+
+    white-space: pre-wrap;
+}
+
+
+/* =========================
+   GENERAL V4 SAFETY
+========================= */
+
+.v4-projects *,
+.v4-skills * {
+    box-sizing: border-box;
+}
+
+.v4-projects p,
+.v4-skills p {
+    text-wrap: pretty;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+    .section-heading-v4 {
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .v4-project-grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .v4-project-card {
+        min-height: 330px;
+    }
+
+    .v4-skill-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .journey-section .section-heading {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .timeline::before {
+        left: 23px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 48px minmax(0, 1fr);
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .timeline-marker {
+        width: 46px;
+        height: 46px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.05rem;
+    }
+
+    .timeline-content p {
+        font-size: .82rem;
+    }
+
+    .section-heading-v4 {
+        display: block !important;
+        margin-bottom: 25px;
+    }
+
+    .section-heading-v4 h2 {
+        font-size: 2.6rem !important;
+    }
+
+    .v4-index {
+        display: block;
+        margin-top: 14px;
+    }
+
+    .v4-project-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .v4-project-card {
+        min-height: 310px;
+        padding: 22px !important;
+    }
+
+    .v4-project-icon {
+        margin-top: 38px;
+    }
+
+    .v4-skill-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+    }
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .timeline-content,
+    .v4-project-card {
+        transition: none !important;
+    }
+
+    .timeline-content:hover,
+    .v4-project-card:hover {
+        transform: none !important;
+    }
+}
