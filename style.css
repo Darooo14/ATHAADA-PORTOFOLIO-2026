@@ -8182,3 +8182,1056 @@ button:not(.music-control):not(.os-button) {
         grid-template-columns: 1fr !important;
     }
 }
+/* =========================================================
+   ATHAADA COLUMN FIX
+   JOURNEY / PROJECT MATRIX / SKILL MATRIX
+   ========================================================= */
+
+/* ================= JOURNEY ================= */
+
+.journey-timeline {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    position: relative !important;
+    width: 100% !important;
+    margin-top: 40px !important;
+}
+
+.journey-line {
+    display: none !important;
+}
+
+.journey-item {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    position: relative !important;
+    min-width: 0 !important;
+}
+
+.journey-dot {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin-bottom: 4px !important;
+
+    border: 1px solid rgba(255,255,255,.25) !important;
+    border-radius: 50% !important;
+
+    background: #050505 !important;
+    color: #fff !important;
+
+    font-family: monospace !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+}
+
+.journey-card {
+    width: 100% !important;
+    min-height: 220px !important;
+    padding: 25px !important;
+    box-sizing: border-box !important;
+
+    border: 1px solid rgba(255,255,255,.12) !important;
+    background: rgba(255,255,255,.025) !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.journey-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: rgba(255,255,255,.3) !important;
+}
+
+.journey-year {
+    display: block !important;
+    margin-bottom: 12px !important;
+
+    color: #777 !important;
+    font-family: monospace !important;
+    font-size: 10px !important;
+    letter-spacing: 2px !important;
+}
+
+.journey-card h3 {
+    margin: 0 0 12px !important;
+    font-size: 21px !important;
+    line-height: 1.15 !important;
+}
+
+.journey-card p {
+    margin: 0 !important;
+    color: #888 !important;
+    font-size: 12px !important;
+    line-height: 1.7 !important;
+}
+
+
+/* ================= PROJECT MATRIX ================= */
+
+.v4-project-list {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+    width: 100% !important;
+    margin-top: 30px !important;
+}
+
+.v4-project-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    min-height: 210px !important;
+    padding: 24px !important;
+
+    border: 1px solid rgba(255,255,255,.12) !important;
+    background: rgba(255,255,255,.025) !important;
+
+    box-sizing: border-box !important;
+}
+
+.v4-project-row:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(255,255,255,.3) !important;
+}
+
+.v4-project-id {
+    margin-bottom: 25px !important;
+    font-family: monospace !important;
+    font-size: 10px !important;
+    color: #666 !important;
+}
+
+.v4-project-info {
+    width: 100% !important;
+}
+
+.v4-project-info strong {
+    display: block !important;
+    font-size: 22px !important;
+    margin-bottom: 8px !important;
+}
+
+.v4-project-info small {
+    color: #777 !important;
+    font-family: monospace !important;
+    font-size: 9px !important;
+}
+
+.v4-project-progress {
+    width: 100% !important;
+    margin-top: auto !important;
+    padding-top: 25px !important;
+}
+
+.v4-project-progress > span {
+    display: block !important;
+    margin-bottom: 8px !important;
+    color: #666 !important;
+    font-family: monospace !important;
+    font-size: 9px !important;
+}
+
+.v4-progress-bar {
+    width: 100% !important;
+    height: 3px !important;
+    background: rgba(255,255,255,.08) !important;
+}
+
+.v4-progress-bar i {
+    display: block !important;
+    height: 100% !important;
+    background: #fff !important;
+}
+
+.v4-project-state {
+    margin-top: 12px !important;
+    color: #777 !important;
+    font-family: monospace !important;
+    font-size: 9px !important;
+}
+
+
+/* ================= SKILL MATRIX ================= */
+
+.skill-matrix-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+    width: 100% !important;
+}
+
+.matrix-item {
+    min-height: 110px !important;
+    padding: 20px !important;
+
+    display: grid !important;
+    grid-template-columns: 42px 1fr auto !important;
+    align-items: center !important;
+    gap: 14px !important;
+
+    border: 1px solid rgba(255,255,255,.1) !important;
+    background: rgba(255,255,255,.025) !important;
+
+    box-sizing: border-box !important;
+}
+
+.matrix-item:hover {
+    transform: translateY(-4px) !important;
+    border-color: rgba(255,255,255,.28) !important;
+}
+
+.matrix-icon {
+    width: 38px !important;
+    height: 38px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border: 1px solid rgba(255,255,255,.15) !important;
+
+    color: #fff !important;
+    font-family: monospace !important;
+    font-size: 11px !important;
+}
+
+.matrix-item strong {
+    display: block !important;
+    margin-bottom: 5px !important;
+
+    color: #fff !important;
+    font-size: 12px !important;
+}
+
+.matrix-item small {
+    color: #666 !important;
+    font-size: 9px !important;
+}
+
+.matrix-state {
+    color: #777 !important;
+    font-family: monospace !important;
+    font-size: 8px !important;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 850px) {
+
+    .journey-timeline {
+        grid-template-columns: 1fr !important;
+    }
+
+    .v4-project-list {
+        grid-template-columns: 1fr !important;
+    }
+
+    .skill-matrix-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+/* =========================================================
+   ATHAADA 3D EXPERIENCE
+   MAIN WEBSITE ONLY
+   ATHAADA OS DESKTOP UNTOUCHED
+   ========================================================= */
+
+:root {
+    --depth-border: rgba(255,255,255,.16);
+    --depth-glow: rgba(255,255,255,.08);
+}
+
+/* 3D cards */
+
+.journey-card,
+.v4-project-row,
+.matrix-item,
+.project-card,
+.skill-card,
+.about-card,
+.contact-box,
+.system-boot,
+.code-window {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition:
+        transform .18s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+/* Depth layers */
+
+.journey-card > *,
+.v4-project-row > *,
+.matrix-item > *,
+.project-card > *,
+.skill-card > *,
+.about-card > *,
+.contact-box > * {
+    transform: translateZ(18px);
+}
+
+/* Glass depth */
+
+.journey-card,
+.v4-project-row,
+.matrix-item {
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+/* Moving shine */
+
+.journey-card::before,
+.v4-project-row::before,
+.matrix-item::before,
+.project-card::before,
+.skill-card::before {
+    content: "";
+    position: absolute;
+    inset: -100%;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at var(--mx, 50%) var(--my, 50%),
+            rgba(255,255,255,.14),
+            transparent 28%
+        );
+
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.journey-card:hover::before,
+.v4-project-row:hover::before,
+.matrix-item:hover::before,
+.project-card:hover::before,
+.skill-card:hover::before {
+    opacity: 1;
+}
+
+/* Project depth */
+
+.v4-project-row,
+.project-card {
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.28),
+        inset 0 0 30px rgba(255,255,255,.015);
+}
+
+.v4-project-row:hover,
+.project-card:hover {
+    box-shadow:
+        0 25px 65px rgba(0,0,0,.5),
+        inset 0 0 35px rgba(255,255,255,.025);
+}
+
+/* Skill depth */
+
+.matrix-item {
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.22),
+        inset 0 0 20px rgba(255,255,255,.012);
+}
+
+.matrix-item:hover {
+    box-shadow:
+        0 22px 50px rgba(0,0,0,.4),
+        inset 0 0 25px rgba(255,255,255,.025);
+}
+
+/* Hero 3D */
+
+.hero-content {
+    transform-style: preserve-3d;
+    perspective: 1200px;
+}
+
+.hero-content > * {
+    transform: translateZ(0);
+}
+
+.code-window {
+    transform:
+        perspective(1200px)
+        rotateX(2deg)
+        rotateY(-2deg)
+        translateZ(0);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.45);
+}
+
+.code-window:hover {
+    box-shadow:
+        0 40px 100px rgba(0,0,0,.6);
+}
+
+/* Profile 3D */
+
+.profile-frame,
+.profile-image {
+    transform-style: preserve-3d;
+}
+
+.profile-frame {
+    perspective: 900px;
+}
+
+.profile-frame:hover .profile-image {
+    transform:
+        translateZ(25px)
+        scale(1.025);
+}
+
+/* 3D buttons */
+
+.btn,
+.playlist-button {
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+
+.btn:hover,
+.playlist-button:hover {
+    transform:
+        translateY(-4px)
+        translateZ(8px);
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.35);
+}
+
+/* Section heading depth */
+
+.section-heading,
+.section-heading-v4,
+.v4-matrix-header {
+    transform-style: preserve-3d;
+}
+
+.section-heading h2,
+.section-heading-v4 h3,
+.v4-matrix-header h3 {
+    transform: translateZ(15px);
+}
+
+/* Ambient 3D light */
+
+.ambient {
+    transition:
+        transform 1.2s cubic-bezier(.2,.8,.2,1);
+}
+
+/* Mouse-follow glow */
+
+[data-tilt] {
+    --mx: 50%;
+    --my: 50%;
+}
+
+/* Don't interfere with OS */
+
+#athaadaOS,
+.athaada-os,
+.os-desktop,
+.os-window,
+.os-taskbar,
+.os-start-menu,
+.desktop-os {
+    transform: none !important;
+    perspective: none !important;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .journey-card,
+    .v4-project-row,
+    .matrix-item,
+    .project-card,
+    .skill-card,
+    .about-card,
+    .contact-box,
+    .system-boot,
+    .code-window {
+        transform: none !important;
+        transition: .25s ease;
+    }
+
+    .journey-card > *,
+    .v4-project-row > *,
+    .matrix-item > *,
+    .project-card > *,
+    .skill-card > *,
+    .about-card > *,
+    .contact-box > * {
+        transform: none !important;
+    }
+
+}
+/* =========================================================
+   ATHAADA 3D LEVEL 2 — FLOATING BACKGROUND + HERO DEPTH
+   ========================================================= */
+
+:root {
+    --scene-x: 0deg;
+    --scene-y: 0deg;
+    --scene-depth: 0px;
+}
+
+/* ---------- 3D SCENE ---------- */
+
+body {
+    perspective: 1600px;
+    perspective-origin: 50% 35%;
+}
+
+/* Ambient background mengikuti mouse */
+.ambient {
+    transform:
+        translate3d(
+            var(--ambient-x, 0px),
+            var(--ambient-y, 0px),
+            -120px
+        )
+        scale(1.08);
+    transform-style: preserve-3d;
+    transition: transform 1s cubic-bezier(.2,.8,.2,1);
+}
+
+/* ---------- FLOATING GRID ---------- */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: -20%;
+    pointer-events: none;
+    z-index: -1;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 55px 55px;
+
+    transform:
+        perspective(900px)
+        rotateX(68deg)
+        translateY(180px)
+        translateZ(-160px)
+        scale(1.4);
+
+    transform-origin: center bottom;
+
+    mask-image:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,1),
+            rgba(0,0,0,.4),
+            transparent
+        );
+
+    opacity: .45;
+    animation: athaadaGridFloat 14s linear infinite;
+}
+
+@keyframes athaadaGridFloat {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 55px;
+    }
+}
+
+/* ---------- HERO DEPTH ---------- */
+
+.hero {
+    transform-style: preserve-3d;
+    perspective: 1400px;
+    overflow: hidden;
+}
+
+.hero-content {
+    transform-style: preserve-3d;
+
+    transition:
+        transform .15s ease-out;
+}
+
+.hero-content .eyebrow {
+    transform:
+        translateZ(55px);
+}
+
+.hero-content h1 {
+    transform:
+        translateZ(35px);
+    text-shadow:
+        0 10px 35px rgba(0,0,0,.45);
+}
+
+.hero-content .hero-description {
+    transform:
+        translateZ(25px);
+}
+
+.hero-content .hero-actions {
+    transform:
+        translateZ(45px);
+}
+
+.hero-content .hero-status {
+    transform:
+        translateZ(30px);
+}
+
+/* ---------- CODE WINDOW DEPTH ---------- */
+
+.code-window {
+    transform:
+        perspective(1200px)
+        rotateX(3deg)
+        rotateY(-4deg)
+        translateZ(45px);
+
+    transform-style: preserve-3d;
+
+    box-shadow:
+        0 35px 90px rgba(0,0,0,.55),
+        0 0 45px rgba(255,255,255,.025);
+}
+
+.code-window::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent 25%,
+            rgba(255,255,255,.08) 45%,
+            transparent 65%
+        );
+
+    transform:
+        translateX(-120%)
+        translateZ(30px);
+
+    transition:
+        transform .8s ease;
+}
+
+.code-window:hover::after {
+    transform:
+        translateX(120%)
+        translateZ(30px);
+}
+
+/* ---------- PROFILE DEPTH ---------- */
+
+.profile-frame {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.profile-frame::before {
+    content: "";
+
+    position: absolute;
+    inset: 8%;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    transform:
+        translateZ(-25px)
+        scale(.92);
+
+    opacity: .7;
+
+    pointer-events: none;
+}
+
+.profile-image {
+    transform:
+        translateZ(35px);
+
+    transition:
+        transform .35s cubic-bezier(.2,.8,.2,1),
+        filter .35s ease;
+}
+
+.profile-frame:hover .profile-image {
+    transform:
+        translateZ(70px)
+        scale(1.035);
+
+    filter:
+        brightness(1.08)
+        contrast(1.04);
+}
+
+/* ---------- FLOATING ORBS ---------- */
+
+.hero .orb,
+.hero .hero-orb {
+    transform-style: preserve-3d;
+    animation:
+        athaadaOrbFloat
+        7s
+        ease-in-out
+        infinite;
+}
+
+@keyframes athaadaOrbFloat {
+    0%,
+    100% {
+        transform:
+            translate3d(0,0,0)
+            rotateX(0deg)
+            rotateY(0deg);
+    }
+
+    50% {
+        transform:
+            translate3d(0,-18px,35px)
+            rotateX(8deg)
+            rotateY(-8deg);
+    }
+}
+
+/* ---------- SECTION DEPTH ---------- */
+
+.section {
+    transform-style: preserve-3d;
+}
+
+.section-heading {
+    transform-style: preserve-3d;
+}
+
+.section-heading > * {
+    transform:
+        translateZ(20px);
+}
+
+/* ---------- 3D BUTTON ---------- */
+
+.btn,
+.playlist-button {
+    transform-style: preserve-3d;
+
+    box-shadow:
+        0 8px 0 rgba(255,255,255,.04),
+        0 15px 35px rgba(0,0,0,.3);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.btn:hover,
+.playlist-button:hover {
+    transform:
+        translateY(-5px)
+        translateZ(15px);
+
+    box-shadow:
+        0 4px 0 rgba(255,255,255,.04),
+        0 25px 50px rgba(0,0,0,.45);
+}
+
+.btn:active,
+.playlist-button:active {
+    transform:
+        translateY(1px)
+        translateZ(3px);
+
+    box-shadow:
+        0 3px 0 rgba(255,255,255,.03),
+        0 8px 20px rgba(0,0,0,.3);
+}
+
+/* =========================================================
+   IMPORTANT — ATHAADA OS TETAP TIDAK DISENTUH
+   ========================================================= */
+
+#athaadaOS,
+.athaada-os,
+.os-desktop,
+.os-window,
+.os-taskbar,
+.os-start-menu,
+.desktop-os,
+#osDesktop,
+#desktopOS {
+    perspective: none !important;
+    transform-style: flat !important;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+    body {
+        perspective: none;
+    }
+
+    .hero::before {
+        transform:
+            rotateX(68deg)
+            translateY(180px)
+            translateZ(-160px)
+            scale(1.2);
+    }
+
+    .hero-content,
+    .code-window,
+    .profile-frame,
+    .profile-image {
+        transform: none !important;
+    }
+
+    .hero-content > * {
+        transform: none !important;
+    }
+}
+
+/* ---------- REDUCED MOTION ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero::before,
+    .hero .orb,
+    .hero .hero-orb {
+        animation: none !important;
+    }
+
+    .hero-content,
+    .ambient,
+    .code-window,
+    .profile-image {
+        transform: none !important;
+        transition: none !important;
+    }
+}
+/* =========================================================
+   ATHAADA 3D ENGINE — FINAL LAYER
+   ========================================================= */
+
+.hero {
+    --hero-x: 0px;
+    --hero-y: 0px;
+
+    transform-style: preserve-3d;
+    perspective: 1400px;
+}
+
+.hero-content {
+    --hero-rotate-x: 0deg;
+    --hero-rotate-y: 0deg;
+
+    transform:
+        perspective(1400px)
+        rotateX(var(--hero-rotate-x))
+        rotateY(var(--hero-rotate-y))
+        translate3d(
+            var(--hero-x),
+            var(--hero-y),
+            30px
+        ) !important;
+
+    transform-style: preserve-3d;
+
+    transition:
+        transform .12s ease-out !important;
+}
+
+.hero-visual {
+    transform-style: preserve-3d;
+
+    transform:
+        translate3d(
+            calc(var(--hero-x) * -0.7),
+            calc(var(--hero-y) * -0.7),
+            45px
+        );
+}
+
+
+/* ================= 3D CARDS ================= */
+
+.project-card,
+.v4-project-row,
+.matrix-item,
+.skill-card,
+.about-card,
+.journey-card,
+.contact-box {
+
+    --card-rx: 0deg;
+    --card-ry: 0deg;
+    --card-z: 0px;
+
+    position: relative;
+
+    transform:
+        perspective(900px)
+        rotateX(var(--card-rx))
+        rotateY(var(--card-ry))
+        translateZ(var(--card-z));
+
+    transform-style: preserve-3d;
+
+    transition:
+        transform .12s ease-out,
+        box-shadow .25s ease,
+        border-color .25s ease;
+
+    will-change: transform;
+}
+
+
+/* ================= SHINE ================= */
+
+.project-card::after,
+.v4-project-row::after,
+.matrix-item::after,
+.skill-card::after,
+.about-card::after,
+.journey-card::after,
+.contact-box::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at var(--shine-x, 50%) var(--shine-y, 50%),
+            rgba(255,255,255,.13),
+            transparent 30%
+        );
+
+    opacity: 0;
+
+    transition:
+        opacity .2s ease;
+}
+
+.project-card:hover::after,
+.v4-project-row:hover::after,
+.matrix-item:hover::after,
+.skill-card:hover::after,
+.about-card:hover::after,
+.journey-card:hover::after,
+.contact-box:hover::after {
+    opacity: 1;
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile-frame {
+    transform-style: preserve-3d;
+
+    transition:
+        transform .25s ease;
+}
+
+.profile-image {
+    transform:
+        translateZ(35px);
+
+    transition:
+        transform .3s ease,
+        filter .3s ease;
+}
+
+.profile-frame:hover .profile-image {
+    transform:
+        translateZ(65px)
+        scale(1.03);
+}
+
+
+/* ================= BACKGROUND DEPTH ================= */
+
+.ambient-one {
+    transform:
+        translate3d(
+            var(--hero-x),
+            var(--hero-y),
+            -100px
+        )
+        scale(1.08);
+
+    transition:
+        transform .8s ease;
+}
+
+.ambient-two {
+    transform:
+        translate3d(
+            calc(var(--hero-x) * -1),
+            calc(var(--hero-y) * -1),
+            -120px
+        )
+        scale(1.08);
+
+    transition:
+        transform .8s ease;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .hero-content,
+    .hero-visual,
+    .project-card,
+    .v4-project-row,
+    .matrix-item,
+    .skill-card,
+    .about-card,
+    .journey-card,
+    .contact-box,
+    .profile-image {
+
+        transform: none !important;
+    }
+}

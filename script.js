@@ -3849,3 +3849,146 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/* =========================================================
+   ATHAADA 3D ENGINE — CLEAN VERSION
+   ========================================================= */
+
+(() => {
+    if (window.innerWidth <= 768) return;
+
+    const hero = document.querySelector(".hero");
+    const heroContent = document.querySelector(".hero-content");
+
+    /* ================= HERO ================= */
+
+    if (hero && heroContent) {
+
+        hero.addEventListener("mousemove", (event) => {
+
+            const rect = hero.getBoundingClientRect();
+
+            const x =
+                (event.clientX - rect.left) / rect.width - 0.5;
+
+            const y =
+                (event.clientY - rect.top) / rect.height - 0.5;
+
+            hero.style.setProperty(
+                "--hero-x",
+                `${x * 12}px`
+            );
+
+            hero.style.setProperty(
+                "--hero-y",
+                `${y * 8}px`
+            );
+
+            heroContent.style.setProperty(
+                "--hero-rotate-x",
+                `${y * -4}deg`
+            );
+
+            heroContent.style.setProperty(
+                "--hero-rotate-y",
+                `${x * 6}deg`
+            );
+        });
+
+        hero.addEventListener("mouseleave", () => {
+
+            hero.style.setProperty(
+                "--hero-x",
+                "0px"
+            );
+
+            hero.style.setProperty(
+                "--hero-y",
+                "0px"
+            );
+
+            heroContent.style.setProperty(
+                "--hero-rotate-x",
+                "0deg"
+            );
+
+            heroContent.style.setProperty(
+                "--hero-rotate-y",
+                "0deg"
+            );
+        });
+    }
+
+
+    /* ================= 3D CARDS ================= */
+
+    const cards = document.querySelectorAll(
+        ".project-card, " +
+        ".v4-project-row, " +
+        ".matrix-item, " +
+        ".skill-card, " +
+        ".about-card, " +
+        ".journey-card, " +
+        ".contact-box"
+    );
+
+    cards.forEach((card) => {
+
+        card.addEventListener("mousemove", (event) => {
+
+            const rect =
+                card.getBoundingClientRect();
+
+            const x =
+                (event.clientX - rect.left) /
+                rect.width - 0.5;
+
+            const y =
+                (event.clientY - rect.top) /
+                rect.height - 0.5;
+
+            card.style.setProperty(
+                "--card-rx",
+                `${y * -7}deg`
+            );
+
+            card.style.setProperty(
+                "--card-ry",
+                `${x * 7}deg`
+            );
+
+            card.style.setProperty(
+                "--card-z",
+                "12px"
+            );
+
+            card.style.setProperty(
+                "--shine-x",
+                `${(x + 0.5) * 100}%`
+            );
+
+            card.style.setProperty(
+                "--shine-y",
+                `${(y + 0.5) * 100}%`
+            );
+        });
+
+        card.addEventListener("mouseleave", () => {
+
+            card.style.setProperty(
+                "--card-rx",
+                "0deg"
+            );
+
+            card.style.setProperty(
+                "--card-ry",
+                "0deg"
+            );
+
+            card.style.setProperty(
+                "--card-z",
+                "0px"
+            );
+        });
+    });
+
+})();
