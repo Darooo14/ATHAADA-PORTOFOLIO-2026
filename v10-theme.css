@@ -1435,3 +1435,165 @@ html {
     pointer-events: auto !important;
     cursor: pointer !important;
 }
+/* =========================================================
+   CONTACT CONTENT EMERGENCY RESTORE
+========================================================= */
+
+#contact {
+    position: relative !important;
+    display: block !important;
+    min-height: 650px !important;
+    padding: 120px 0 !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 50 !important;
+}
+
+#contact .contact-box {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    min-height: 500px !important;
+
+    padding: 70px !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+
+    overflow: visible !important;
+    z-index: 51 !important;
+
+    color: #fff !important;
+}
+
+/* SEMUA ISI CONTACT */
+#contact .contact-box > * {
+    position: relative !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+    z-index: 60 !important;
+}
+
+/* Judul */
+#contact .contact-box h2 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    color: #fff !important;
+
+    font-size: clamp(42px, 7vw, 100px) !important;
+    line-height: .9 !important;
+
+    margin: 20px 0 0 !important;
+}
+
+/* LET'S BUILD IT */
+#contact .contact-box h2 span {
+    display: inline !important;
+    color: #777 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Deskripsi */
+#contact .contact-box > p {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    max-width: 650px !important;
+
+    margin: 30px 0 0 !important;
+
+    color: #999 !important;
+
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+}
+
+/* BUTTON AREA */
+#contact .contact-actions {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    gap: 12px !important;
+    margin-top: 35px !important;
+}
+
+/* BUTTON */
+#contact .contact-actions button {
+    display: inline-flex !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: relative !important;
+    z-index: 100 !important;
+
+    pointer-events: auto !important;
+}
+
+/* TERMINAL */
+#contact .contact-terminal {
+    display: block !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    margin-top: 60px !important;
+
+    color: #777 !important;
+    background: rgba(0,0,0,.35) !important;
+
+    border: 1px solid rgba(255,255,255,.12) !important;
+
+    padding: 20px !important;
+
+    font-family: monospace !important;
+}
+
+/* EYEBROW */
+#contact .eyebrow {
+    display: block !important;
+
+    color: #8cffb0 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* GLOW JANGAN NUTUPI TEXT */
+#contact .contact-glow {
+    z-index: 1 !important;
+    pointer-events: none !important;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    #contact {
+        padding: 80px 0 !important;
+    }
+
+    #contact .contact-box {
+        padding: 35px 25px !important;
+    }
+
+    #contact .contact-box h2 {
+        font-size: 48px !important;
+    }
+
+    #contact .contact-actions {
+        flex-direction: column !important;
+    }
+
+    #contact .contact-actions button {
+        width: 100% !important;
+    }
+}
