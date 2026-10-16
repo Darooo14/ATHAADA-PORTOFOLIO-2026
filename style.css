@@ -5711,3 +5711,215 @@ img:not(.profile-image) {
 
 /* ================= V8 END ================= */
 
+
+/* =========================================================
+   ATHAADA V9 — HERO GRID REPAIR
+   ROOT CAUSE FIX
+   ATHAADA OS DESKTOP TIDAK DISENTUH
+========================================================= */
+
+/* CANVAS JANGAN JADI GRID ITEM */
+.hero {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.1fr) minmax(360px, .9fr) !important;
+    align-items: center !important;
+    gap: clamp(30px, 5vw, 70px) !important;
+    overflow: hidden !important;
+}
+
+/* PARTICLE CANVAS JADI BACKGROUND */
+.hero > #particleCanvas {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+}
+
+/* TEKS HERO BALIK KE KOLOM KIRI */
+.hero > .hero-content {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    position: relative !important;
+    z-index: 5 !important;
+    min-width: 0 !important;
+    width: 100% !important;
+}
+
+/* PROFILE BALIK KE KOLOM KANAN */
+.hero > .hero-visual {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    position: relative !important;
+    z-index: 4 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 580px !important;
+    display: grid !important;
+    place-items: center !important;
+}
+
+/* TEXT HERO */
+.hero h1 {
+    position: relative !important;
+    z-index: 6 !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+}
+
+.hero-name {
+    display: block !important;
+    width: max-content !important;
+    max-width: 100% !important;
+    font-size: clamp(4rem, 8vw, 7.5rem) !important;
+    line-height: .88 !important;
+    white-space: nowrap !important;
+    color: #fff !important;
+}
+
+.hero-role {
+    display: block !important;
+    max-width: 100% !important;
+    margin-top: 14px !important;
+    font-size: clamp(1.7rem, 3.4vw, 3.4rem) !important;
+    line-height: .95 !important;
+}
+
+/* DESCRIPTION */
+.hero-description {
+    position: relative !important;
+    z-index: 6 !important;
+    max-width: 570px !important;
+}
+
+/* BUTTON */
+.hero-actions {
+    position: relative !important;
+    z-index: 6 !important;
+}
+
+/* META */
+.hero-meta {
+    position: relative !important;
+    z-index: 6 !important;
+}
+
+/* PROFILE */
+.profile-frame {
+    width: min(390px, 100%) !important;
+    max-width: 390px !important;
+    margin: auto !important;
+    position: relative !important;
+    z-index: 5 !important;
+}
+
+/* ORBIT JANGAN MENGGANGGU LAYOUT */
+.hero-orbit {
+    pointer-events: none !important;
+    z-index: 0 !important;
+}
+
+/* FLOATING CARD */
+.floating-card-one {
+    left: 0 !important;
+}
+
+.floating-card-two {
+    right: 0 !important;
+}
+
+/* HERO ANIMATION */
+.hero > .hero-content,
+.hero > .hero-visual {
+    animation: heroEnter .9s cubic-bezier(.2,.8,.2,1) both;
+}
+
+.hero > .hero-visual {
+    animation-delay: .12s;
+}
+
+@keyframes heroEnter {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* PROFILE FLOAT */
+.hero-visual .profile-frame {
+    animation: profileFloat 5s ease-in-out infinite;
+}
+
+@keyframes profileFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 1fr !important;
+        gap: 50px !important;
+        padding-top: 120px !important;
+    }
+
+    .hero > .hero-content {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+    }
+
+    .hero > .hero-visual {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+        min-height: 500px !important;
+    }
+
+    .hero-name {
+        font-size: clamp(3.5rem, 15vw, 6rem) !important;
+    }
+
+    .hero-role {
+        font-size: clamp(1.5rem, 7vw, 2.8rem) !important;
+    }
+
+    .profile-frame {
+        width: min(360px, 90vw) !important;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .hero {
+        width: min(100% - 28px, 680px) !important;
+    }
+
+    .hero-name {
+        font-size: 3.4rem !important;
+    }
+
+    .hero-role {
+        font-size: 1.65rem !important;
+    }
+
+    .hero-visual {
+        min-height: 430px !important;
+    }
+}
+
+/* =========================================================
+   V9 END
+========================================================= */
+
