@@ -3769,3 +3769,49 @@ if (v6Element) {
 }
 
 })();
+/* =========================================================
+   CONTACT NAVIGATION FIX
+========================================================= */
+
+document.addEventListener("click", function (event) {
+    const link = event.target.closest('a[href="#contact"]');
+
+    if (!link) return;
+
+    event.preventDefault();
+
+    const contact = document.getElementById("contact");
+
+    if (!contact) {
+        console.warn("CONTACT SECTION TIDAK DITEMUKAN");
+        return;
+    }
+
+    // Pastikan contact terlihat
+    contact.style.display = "block";
+    contact.style.visibility = "visible";
+    contact.style.opacity = "1";
+
+    const box = contact.querySelector(".contact-box");
+
+    if (box) {
+        box.style.display = "block";
+        box.style.visibility = "visible";
+        box.style.opacity = "1";
+        box.style.transform = "none";
+    }
+
+    // Scroll ke Contact
+    setTimeout(() => {
+        const offset = 80;
+        const position =
+            contact.getBoundingClientRect().top +
+            window.scrollY -
+            offset;
+
+        window.scrollTo({
+            top: position,
+            behavior: "smooth"
+        });
+    }, 50);
+});
