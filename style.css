@@ -4909,7 +4909,7 @@ section:not(#athaadaV6):not(#v5-system) h2::after {
     }
 }
 /* =========================================================
-   ATHAADA V7 PATCH — LAYOUT & INTERACTION FIX
+   ATHAADA V7 PATCH ï¿½ LAYOUT & INTERACTION FIX
    CSS ONLY
    ATHAADA OS TIDAK DISENTUH
 ========================================================= */
@@ -5049,7 +5049,7 @@ section h3 {
 }
 
 
-/* ---------- PLAYLIST — FORCE CLICKABLE ---------- */
+/* ---------- PLAYLIST ï¿½ FORCE CLICKABLE ---------- */
 
 .playlist-button {
     position: fixed !important;
@@ -5188,7 +5188,7 @@ code {
 
 
 /* =========================================================
-   ATHAADA ICHIRO V8 — LAYOUT + MOTION POLISH
+   ATHAADA ICHIRO V8 ï¿½ LAYOUT + MOTION POLISH
    SAFE PATCH
    ATHAADA OS DESKTOP TIDAK DISENTUH
 ========================================================= */
@@ -5713,7 +5713,7 @@ img:not(.profile-image) {
 
 
 /* =========================================================
-   ATHAADA V9 — HERO GRID REPAIR
+   ATHAADA V9 ï¿½ HERO GRID REPAIR
    ROOT CAUSE FIX
    ATHAADA OS DESKTOP TIDAK DISENTUH
 ========================================================= */
@@ -5923,3 +5923,312 @@ img:not(.profile-image) {
    V9 END
 ========================================================= */
 
+/* =========================================================
+   CONTACT FINAL OVERRIDE
+   FORCE RENDER â€” DO NOT TOUCH ATHAADA OS
+========================================================= */
+
+#contact.contact-section {
+    all: revert;
+    display: block !important;
+    position: relative !important;
+
+    width: min(1180px, 90%) !important;
+
+    margin: 0 auto !important;
+    padding: 120px 0 !important;
+
+    min-height: 650px !important;
+
+    box-sizing: border-box !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    overflow: visible !important;
+
+    color: #fff !important;
+}
+
+#contact.contact-section .contact-box {
+    all: revert;
+
+    display: block !important;
+    position: relative !important;
+
+    width: 100% !important;
+    min-height: 500px !important;
+
+    box-sizing: border-box !important;
+
+    padding: 70px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.07),
+            rgba(255,255,255,.015)
+        ) !important;
+
+    border: 1px solid rgba(255,255,255,.14) !important;
+
+    color: white !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: none !important;
+
+    overflow: visible !important;
+
+    z-index: 999 !important;
+}
+
+/* CONTACT GLOW */
+
+#contact .contact-glow {
+    position: absolute !important;
+
+    width: 500px !important;
+    height: 500px !important;
+
+    right: -180px !important;
+    top: -200px !important;
+
+    border-radius: 50% !important;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,.12),
+            transparent 70%
+        ) !important;
+
+    pointer-events: none !important;
+
+    z-index: 0 !important;
+}
+
+/* EYEBROW */
+
+#contact .eyebrow {
+    position: relative !important;
+
+    display: block !important;
+
+    margin: 0 0 20px !important;
+
+    color: #8cffb0 !important;
+
+    font-family: monospace !important;
+
+    font-size: 11px !important;
+
+    letter-spacing: 3px !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    z-index: 10 !important;
+}
+
+/* TITLE */
+
+#contact h2 {
+    position: relative !important;
+
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 1000px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #fff !important;
+
+    font-family: "Space Grotesk", sans-serif !important;
+
+    font-size: clamp(55px, 8vw, 110px) !important;
+
+    font-weight: 800 !important;
+
+    line-height: .9 !important;
+
+    letter-spacing: -5px !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: none !important;
+
+    z-index: 10 !important;
+}
+
+#contact h2 span {
+    display: inline !important;
+
+    color: transparent !important;
+
+    -webkit-text-stroke: 1px rgba(255,255,255,.55) !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* DESCRIPTION */
+
+#contact .contact-box > p {
+    position: relative !important;
+
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 620px !important;
+
+    margin: 35px 0 0 !important;
+
+    color: #999 !important;
+
+    font-family: Arial, sans-serif !important;
+
+    font-size: 15px !important;
+
+    line-height: 1.8 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    z-index: 10 !important;
+}
+
+/* BUTTON AREA */
+
+#contact .contact-actions {
+    position: relative !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    flex-wrap: wrap !important;
+
+    gap: 12px !important;
+
+    margin: 35px 0 0 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    z-index: 20 !important;
+}
+
+/* BUTTON */
+
+#contact .contact-actions button {
+    position: relative !important;
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-height: 46px !important;
+
+    padding: 13px 20px !important;
+
+    border: 1px solid rgba(255,255,255,.2) !important;
+
+    background: rgba(255,255,255,.05) !important;
+
+    color: white !important;
+
+    cursor: pointer !important;
+
+    pointer-events: auto !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: none !important;
+
+    z-index: 30 !important;
+}
+
+/* TERMINAL */
+
+#contact .contact-terminal {
+    position: relative !important;
+
+    display: block !important;
+
+    width: min(100%, 720px) !important;
+
+    margin: 60px 0 0 !important;
+
+    padding: 20px 22px !important;
+
+    box-sizing: border-box !important;
+
+    border: 1px solid rgba(255,255,255,.12) !important;
+
+    background: rgba(0,0,0,.5) !important;
+
+    color: #777 !important;
+
+    font-family: "Courier New", monospace !important;
+
+    font-size: 12px !important;
+
+    line-height: 1.8 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    z-index: 10 !important;
+}
+
+#contact .contact-terminal strong {
+    color: #aaa !important;
+}
+
+#contact .contact-terminal .blink {
+    color: #8cffb0 !important;
+}
+
+/* KILL REVEAL ONLY FOR CONTACT */
+
+html.js-enabled #contact .reveal,
+html.js-enabled #contact.contact-section .contact-box.reveal {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    #contact.contact-section {
+        width: calc(100% - 32px) !important;
+        padding: 80px 0 !important;
+    }
+
+    #contact.contact-section .contact-box {
+        padding: 40px 25px !important;
+    }
+
+    #contact h2 {
+        font-size: 52px !important;
+        letter-spacing: -3px !important;
+    }
+
+    #contact .contact-actions {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    #contact .contact-actions button {
+        width: 100% !important;
+    }
+}
