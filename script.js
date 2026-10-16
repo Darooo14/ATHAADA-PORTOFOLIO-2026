@@ -3815,3 +3815,37 @@ document.addEventListener("click", function (event) {
         });
     }, 50);
 });
+/* =========================================================
+   PLAYLIST CLICK FIX
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const playlistButton =
+        document.getElementById("playlistButton");
+
+    const musicPlayer =
+        document.getElementById("musicPlayer");
+
+    if (!playlistButton) {
+        console.warn("PLAYLIST BUTTON TIDAK DITEMUKAN");
+        return;
+    }
+
+    playlistButton.style.pointerEvents = "auto";
+
+    playlistButton.addEventListener("click", (event) => {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (!musicPlayer) {
+            console.warn("MUSIC PLAYER TIDAK DITEMUKAN");
+            return;
+        }
+
+        musicPlayer.classList.toggle("active");
+
+    });
+
+});

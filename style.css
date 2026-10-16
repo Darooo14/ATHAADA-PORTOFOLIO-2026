@@ -6232,3 +6232,64 @@ html.js-enabled #contact.contact-section .contact-box.reveal {
         width: 100% !important;
     }
 }
+/* =========================================================
+   PLAYLIST CLICK FIX
+========================================================= */
+
+.playlist-button {
+    position: fixed !important;
+    right: 24px !important;
+    bottom: 24px !important;
+
+    z-index: 2147483647 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    pointer-events: auto !important;
+    cursor: pointer !important;
+
+    padding: 12px 18px !important;
+
+    border: 1px solid rgba(255,255,255,.25) !important;
+    background: rgba(5,5,5,.95) !important;
+    color: #fff !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: translateZ(999px);
+}
+
+.playlist-button::before,
+.playlist-button::after {
+    pointer-events: none !important;
+}
+
+.playlist-button:hover {
+    background: #fff !important;
+    color: #000 !important;
+    transform: translateY(-3px) translateZ(999px) !important;
+}
+
+/* Jangan biarkan overlay menangkap klik */
+#particleCanvas,
+.hero::before,
+.hero::after,
+.contact-glow,
+.contact-box::before,
+.contact-box::after {
+    pointer-events: none !important;
+}
+
+/* Music player */
+#musicPlayer {
+    position: fixed !important;
+    right: 24px !important;
+    bottom: 82px !important;
+
+    z-index: 2147483646 !important;
+
+    pointer-events: auto !important;
+}
